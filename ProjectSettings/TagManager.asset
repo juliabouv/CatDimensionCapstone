@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - AudioListener
+  - Enemy
+  - Hazards
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Ground
+  - Background
+  - Player
+  - Enemy
+  - Hazards
+  - Interactables
+  - Walls
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 3187714035
+    locked: 0
+  - name: Foreground
+    uniqueID: 1366280379
+    locked: 0
+  - name: Enemy
+    uniqueID: 669124457
+    locked: 0
+  - name: Interactables
+    uniqueID: 2137286109
+    locked: 0
+  - name: Hazards
+    uniqueID: 2908145675
+    locked: 0
+  - name: Level Exit
+    uniqueID: 1953392681
+    locked: 0
+  - name: Player
+    uniqueID: 4286938753
+    locked: 0
