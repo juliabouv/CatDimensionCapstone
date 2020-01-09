@@ -11,6 +11,8 @@ public class GameSession : MonoBehaviour {
     [SerializeField] public int playerLives = 9;
     [SerializeField] public int score = 0;
 
+    [SerializeField] float DeathLoadDelay = 1f;
+
     [SerializeField] public TextMeshProUGUI livesText;
     [SerializeField] public TextMeshProUGUI scoreText;
     [SerializeField] public Image healthBar;
@@ -63,6 +65,14 @@ public class GameSession : MonoBehaviour {
     private void TakeLife()
     {
         playerLives--;
+
+        StartCoroutine(SlowDeathLoad());
+        
+    }
+
+    IEnumerator SlowDeathLoad()
+    {
+        yield return new WaitForSecondsRealtime(DeathLoadDelay);
         var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex);
         livesText.text = playerLives.ToString();

@@ -153,6 +153,8 @@ public class Player : MonoBehaviour {
         }
     }
 
+    
+
     public void AddLife()
     {
         if (currentHealth < maxHealth)
