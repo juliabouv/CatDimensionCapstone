@@ -42,6 +42,11 @@ public class GameSession : MonoBehaviour {
         scoreText.text = score.ToString();
     }
 
+    public void UpdateHealthBar(int currentHealth, int maxHealth)
+    {
+        healthBar.fillAmount = (float)currentHealth / (float)maxHealth;
+    }
+
     public void ProcessPlayerDeath()
     {
         if (playerLives > 1)

@@ -136,7 +136,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.017690212, y: -0.07225335}
@@ -184,7 +184,6 @@ MonoBehaviour:
   currentHealth: 2
   runSpeed: 8
   jumpSpeed: 30
-  climbSpeed: 5
   invulnerabilityTime: 2
   deathKick: {x: 25, y: 25}
   playerDeathSFX: {fileID: 8300000, guid: b513b5d26c37c48549e4e5e1c438f290, type: 3}

@@ -16,6 +16,9 @@ EditorBuildSettings:
     guid: c481f396d0ddc4a2c87fa4bf41861fc3
   - enabled: 1
     path: Assets/Levels/Level 2 (Hazards).unity
+    guid: b750c00186bf24d9a8da5335bbdacfcf
+  - enabled: 1
+    path: Assets/Levels/Level 3 (Bounce Tile).unity
     guid: 0ab28a77746a349508add49fe0b534b0
   - enabled: 1
     path: Assets/Levels/Success.unity

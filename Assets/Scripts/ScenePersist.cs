@@ -12,7 +12,8 @@ public class ScenePersist : MonoBehaviour {
         int numScenePersist = FindObjectsOfType<ScenePersist>().Length;
         if (numScenePersist > 1)
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
+            ResetScenePersist();
             Debug.Log("Scene Persist destroyed");
         }
         else
@@ -31,7 +32,13 @@ public class ScenePersist : MonoBehaviour {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         if (currentSceneIndex != startingSceneIndex)
         {
-            Destroy(gameObject);
+            Debug.Log("currentSceneIndex != startingSceneIndex");
+            ResetScenePersist();
         }
 	}
+
+    public void ResetScenePersist()
+    {
+        Destroy(gameObject);
+    }
 }

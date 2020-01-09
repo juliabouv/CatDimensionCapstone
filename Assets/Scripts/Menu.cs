@@ -17,6 +17,7 @@ public class Menu : MonoBehaviour {
     public void LoadMainMenu()
     {
         FindObjectOfType<GameSession>().ResetGameSession();
+        
         SceneManager.LoadScene(0);
     }
 }

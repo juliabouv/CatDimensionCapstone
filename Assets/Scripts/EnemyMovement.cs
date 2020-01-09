@@ -25,9 +25,9 @@ public class EnemyMovement : MonoBehaviour {
         }
     }
 
-    public void killEnemy()
+    public void killEnemy(GameObject enemy)
 	{
-		Destroy(gameObject);
+		Destroy(enemy);
 	}
 
     bool IsFacingRight()
