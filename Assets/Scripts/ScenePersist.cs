@@ -7,13 +7,13 @@ public class ScenePersist : MonoBehaviour {
 
     int startingSceneIndex;
 
-    private void Awake()
+    public void Awake()
     {
         int numScenePersist = FindObjectsOfType<ScenePersist>().Length;
         if (numScenePersist > 1)
         {
             gameObject.SetActive(false);
-            ResetScenePersist();
+            Destroy(gameObject);
             Debug.Log("Scene Persist destroyed");
         }
         else
@@ -35,7 +35,7 @@ public class ScenePersist : MonoBehaviour {
             Debug.Log("currentSceneIndex != startingSceneIndex");
             ResetScenePersist();
         }
-	}
+    }
 
     public void ResetScenePersist()
     {

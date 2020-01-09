@@ -56,6 +56,7 @@ public class Player : MonoBehaviour {
         //Acceleration();
         Jump();
         FlipSprite();
+        Hazards();
         Die();
         FindObjectOfType<GameSession>().UpdateHealthBar(currentHealth, maxHealth);
     }
@@ -81,7 +82,6 @@ public class Player : MonoBehaviour {
     private void Jump()
     {
         bool grounded = myFeet.IsTouchingLayers(LayerMask.GetMask("Ground"));
-        Debug.Log("Grounded?" + grounded);
 
         fGroundedRemember -= Time.deltaTime;
         if (grounded)
@@ -106,14 +106,11 @@ public class Player : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy")) && !(GameObject.Find("Player").transform.position.y >= collision.transform.position.y))
         {
             GameObject audioListener = GameObject.FindWithTag("AudioListener");
             AudioSource.PlayClipAtPoint(playerDeathSFX, audioListener.transform.position, soundVol);
-        }
 
-        if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy")) && !(GameObject.Find("Player").transform.position.y >= collision.transform.position.y))
-        {
             StartCoroutine(GetInvulnerable());
             currentHealth--;
             FindObjectOfType<GameSession>().UpdateHealthBar(currentHealth, maxHealth);
@@ -122,35 +119,30 @@ public class Player : MonoBehaviour {
         {
             FindObjectOfType<EnemyMovement>().killEnemy(collision.gameObject);
         }
-
-        Die();
     }
 
-    private void Die()
+    private void Hazards()
     {
-
-  //      if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy")) && !(GameObject.Find("Player").transform.position.y >= GameObject.Find("Enemy").transform.position.y))
-		//{
-  //          StartCoroutine(GetInvulnerable());
-  //          currentHealth--;
-  //          FindObjectOfType<GameSession>().UpdateHealthBar(currentHealth, maxHealth);
-  //      }
-
-		//else if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy")) && GameObject.Find("Player").transform.position.y >= GameObject.Find("Enemy").transform.position.y)
-		//{
-  //          FindObjectOfType<EnemyMovement>().killEnemy();
-		//}
-
-        //else if
-		if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Hazards")))
+        if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Hazards")))
         {
-            
+            GameObject audioListener = GameObject.FindWithTag("AudioListener");
+            AudioSource.PlayClipAtPoint(playerDeathSFX, audioListener.transform.position, soundVol);
+
+            StartCoroutine(GetInvulnerable());
+            currentHealth--;
+            FindObjectOfType<GameSession>().UpdateHealthBar(currentHealth, maxHealth);
+        }
+        else if(myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Death Hazards")))
+        {
             isAlive = false;
             myAnimator.SetTrigger("Dying");
             GetComponent<Rigidbody2D>().velocity = deathKick;
             FindObjectOfType<GameSession>().ProcessPlayerDeath();
         }
+    }
 
+    private void Die()
+    {
         if (currentHealth < 1)
         {
             isAlive = false;
