@@ -188,4 +188,9 @@ public class Player : MonoBehaviour {
         }
     }
 
+    public void ExitLevel()
+    {
+        myAnimator.SetTrigger("Exiting Level");
+    }
+
 }
