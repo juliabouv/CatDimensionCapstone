@@ -7,7 +7,7 @@ using UnityStandardAssets.CrossPlatformInput;
 public class Player : MonoBehaviour {
 
     // Config
-    [SerializeField] public int maxHealth = 2;
+    [SerializeField] public int maxHealth = 4;
     [SerializeField] public int currentHealth = 2;
     [SerializeField] float runSpeed = 8f;
     [SerializeField] float jumpSpeed = 28f;

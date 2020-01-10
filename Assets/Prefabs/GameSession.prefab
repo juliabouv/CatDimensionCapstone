@@ -35,8 +35,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 151.20001, y: 36}
-  m_SizeDelta: {x: 290.7, y: 71}
+  m_AnchoredPosition: {x: 162.9, y: 50.5}
+  m_SizeDelta: {x: 314, y: 100.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &117196652
 CanvasRenderer:
@@ -132,12 +132,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5420541, g: 0.45020467, b: 0.6320754, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b322840123e34408d92e604de73045f3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 32935311eb9404260b16b10c7cc8c309, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -450,6 +450,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerLives: 9
   score: 0
+  DeathLoadDelay: 1
   livesText: {fileID: 5343694482585310012}
   scoreText: {fileID: 5343694481566829169}
   healthBar: {fileID: 298244810}
