@@ -11,6 +11,7 @@ public class Player : MonoBehaviour {
     [SerializeField] public int currentHealth = 2;
     [SerializeField] float runSpeed = 8f;
     [SerializeField] float jumpSpeed = 28f;
+    [SerializeField] float bounceTileSpeed = 38f;
     [SerializeField] float invulnerabilityTime = 2f;
     [SerializeField] Vector2 deathKick = new Vector2(25f, 25f);
     [SerializeField] AudioClip playerDeathSFX;
@@ -102,6 +103,13 @@ public class Player : MonoBehaviour {
             Vector2 jumpVelocityToAdd = new Vector2(0f, jumpSpeed);
             myRigidBody.velocity += jumpVelocityToAdd;
         }
+
+        // Jump Block Logic
+        if (myFeet.IsTouchingLayers(LayerMask.GetMask("Bounce Tile")) && CrossPlatformInputManager.GetButtonDown("Jump") && !(myFeet.IsTouchingLayers(LayerMask.GetMask("Ground"))))
+        {
+            Vector2 bounceVelocityToAdd = new Vector2(0f, bounceTileSpeed);
+            myRigidBody.velocity += bounceVelocityToAdd;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -152,8 +160,6 @@ public class Player : MonoBehaviour {
             FindObjectOfType<GameSession>().ProcessPlayerDeath();
         }
     }
-
-    
 
     public void AddLife()
     {

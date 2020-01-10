@@ -10,6 +10,11 @@ public class BounceTile : MonoBehaviour
 
     Animator bounceAnimator;
 
+    void Start()
+    {
+        bounceAnimator = GetComponent<Animator>();
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         bounceAnimator.SetTrigger("Tile Bounce");

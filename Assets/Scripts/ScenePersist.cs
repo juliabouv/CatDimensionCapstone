@@ -41,4 +41,9 @@ public class ScenePersist : MonoBehaviour {
     {
         Destroy(gameObject);
     }
+
+    private void OnDestroy()
+    {
+        Destroy(gameObject);
+    }
 }

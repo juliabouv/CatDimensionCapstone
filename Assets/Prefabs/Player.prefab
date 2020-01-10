@@ -139,8 +139,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.020390987, y: -0.07386047}
-  m_Size: {x: 0.5097914, y: 0.5674139}
+  m_Offset: {x: -0.037973404, y: -0.08045578}
+  m_Size: {x: 0.5449562, y: 0.5893936}
   m_Direction: 0
 --- !u!61 &5614685475276760553
 BoxCollider2D:
@@ -155,7 +155,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.033753872, y: -0.27243042}
+  m_Offset: {x: -0.024999619, y: -0.27243042}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -166,7 +166,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.44144344, y: 0.21878624}
+  m_Size: {x: 0.5149784, y: 0.21878624}
   m_EdgeRadius: 0
 --- !u!114 &5614685475276760558
 MonoBehaviour:
@@ -184,6 +184,7 @@ MonoBehaviour:
   currentHealth: 2
   runSpeed: 8
   jumpSpeed: 30
+  bounceTileSpeed: 38
   invulnerabilityTime: 2
   deathKick: {x: 25, y: 25}
   playerDeathSFX: {fileID: 8300000, guid: b513b5d26c37c48549e4e5e1c438f290, type: 3}

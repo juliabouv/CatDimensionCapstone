@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Bounce Tile Bouncing
+  m_Name: Bounce Tile Bouncing 1
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,13 +20,13 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 4648491137394688088, guid: 6e31bc362e5e843d3ae18de06d2354d4,
+      value: {fileID: -6942141043689335817, guid: 1f857081649964d0997da7a9f79dd2a6,
         type: 3}
     - time: 0.083333336
-      value: {fileID: 4861769062675671981, guid: 6e31bc362e5e843d3ae18de06d2354d4,
+      value: {fileID: 1838179287255195775, guid: 1f857081649964d0997da7a9f79dd2a6,
         type: 3}
     - time: 0.16666667
-      value: {fileID: 3464989853387440261, guid: 6e31bc362e5e843d3ae18de06d2354d4,
+      value: {fileID: -5154877931402261768, guid: 1f857081649964d0997da7a9f79dd2a6,
         type: 3}
     attribute: m_Sprite
     path: 
@@ -47,9 +47,9 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 4648491137394688088, guid: 6e31bc362e5e843d3ae18de06d2354d4, type: 3}
-    - {fileID: 4861769062675671981, guid: 6e31bc362e5e843d3ae18de06d2354d4, type: 3}
-    - {fileID: 3464989853387440261, guid: 6e31bc362e5e843d3ae18de06d2354d4, type: 3}
+    - {fileID: -6942141043689335817, guid: 1f857081649964d0997da7a9f79dd2a6, type: 3}
+    - {fileID: 1838179287255195775, guid: 1f857081649964d0997da7a9f79dd2a6, type: 3}
+    - {fileID: -5154877931402261768, guid: 1f857081649964d0997da7a9f79dd2a6, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

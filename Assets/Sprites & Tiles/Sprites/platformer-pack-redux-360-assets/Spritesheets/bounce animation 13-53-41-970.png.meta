@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: d8111e607533947ebab218af18c9cbd2
+guid: 6e31bc362e5e843d3ae18de06d2354d4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6942141043689335817
-    second: bounce animation_0
+      213: 4648491137394688088
+    second: bounce animation 13-53-41-970_0
   - first:
-      213: 1838179287255195775
-    second: bounce animation_1
+      213: 4861769062675671981
+    second: bounce animation 13-53-41-970_1
   - first:
-      213: -5154877931402261768
-    second: bounce animation_2
+      213: 3464989853387440261
+    second: bounce animation 13-53-41-970_2
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -107,28 +107,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bounce animation_0
-      rect:
-        serializedVersion: 2
-        x: 284
-        y: 255
-        width: 128
-        height: 66
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 05a53924db9b64fcf9760454ca6d5baa
-      internalID: -6942141043689335817
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bounce animation_1
+      name: bounce animation 13-53-41-970_0
       rect:
         serializedVersion: 2
         x: 450
@@ -142,14 +121,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b915b4657865b4d89b88e47080019f2c
-      internalID: 1838179287255195775
+      spriteID: c8ddc9ee1596d436d98d10b4ff736dec
+      internalID: 4648491137394688088
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bounce animation_2
+      name: bounce animation 13-53-41-970_1
       rect:
         serializedVersion: 2
         x: 611
@@ -163,8 +142,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 144ea12f6ca7c41898dd37e3f3051b7b
-      internalID: -5154877931402261768
+      spriteID: 29c9486a8040544ab97b6ce8adef70f1
+      internalID: 4861769062675671981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounce animation 13-53-41-970_2
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 253
+        width: 128
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0150589f1dad4469d98d70b459fd877c
+      internalID: 3464989853387440261
       vertices: []
       indices: 
       edges: []
