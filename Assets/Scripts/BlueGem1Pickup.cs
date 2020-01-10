@@ -15,6 +15,8 @@ public class BlueGem1Pickup : MonoBehaviour
         {
             gemPicked = true;
             FindObjectOfType<GameSession>().AddToScore(pointsForGemPickup);
+            FindObjectOfType<GameSession>().IncreaseLife();
+
             Destroy(gameObject);
 
             GameObject audioListener = GameObject.FindWithTag("AudioListener");

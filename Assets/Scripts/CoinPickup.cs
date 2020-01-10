@@ -15,7 +15,9 @@ public class CoinPickup : MonoBehaviour {
 		{
             coinPicked = true;
 			FindObjectOfType<GameSession>().AddToScore(pointsForCoinPickup);
-			Destroy(gameObject);
+            FindObjectOfType<GameSession>().IncreaseLife();
+
+            Destroy(gameObject);
 
             GameObject audioListener = GameObject.FindWithTag("AudioListener");
             AudioSource.PlayClipAtPoint(coinPickUpSFX, audioListener.transform.position, soundVol);

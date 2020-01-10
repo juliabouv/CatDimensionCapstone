@@ -67,7 +67,14 @@ public class GameSession : MonoBehaviour {
         playerLives--;
 
         StartCoroutine(SlowDeathLoad());
-        
+    }
+
+    public void IncreaseLife()
+    {
+        int newLives = score / 1000;
+
+        playerLives += newLives;
+        livesText.text = playerLives.ToString();
     }
 
     IEnumerator SlowDeathLoad()
