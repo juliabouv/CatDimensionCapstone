@@ -17,6 +17,8 @@ public class GameSession : MonoBehaviour {
     [SerializeField] public TextMeshProUGUI scoreText;
     [SerializeField] public Image healthBar;
 
+    int addedLives = 0;
+
     private void Awake()
     {
         int numGameSessions = FindObjectsOfType<GameSession>().Length;
@@ -71,10 +73,13 @@ public class GameSession : MonoBehaviour {
 
     public void IncreaseLife()
     {
-        int newLives = score / 1000;
-
-        playerLives += newLives;
-        livesText.text = playerLives.ToString();
+        int newLives = (score - addedLives * 1000) / 1000;
+        if (newLives == 1)
+        {
+            playerLives += newLives;
+            addedLives++;
+            livesText.text = playerLives.ToString();
+        }
     }
 
     IEnumerator SlowDeathLoad()
