@@ -5,8 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class LevelExit : MonoBehaviour {
 
-    [SerializeField] float LevelLoadDelay = 1f;
-    [SerializeField] float LevelExitSlowMoFactor = 0.2f;
+    [SerializeField] float LevelLoadDelay = 4f;
+    [SerializeField] float LevelExitSlowMoFactor = 0.5f;
+
+    [SerializeField] AudioClip portalEnterSFX;
+    [SerializeField] float soundVol = 0.25f;
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -15,6 +18,9 @@ public class LevelExit : MonoBehaviour {
 
     IEnumerator LoadNextLevel()
     {
+        GameObject audioListener = GameObject.FindWithTag("AudioListener");
+        AudioSource.PlayClipAtPoint(portalEnterSFX, audioListener.transform.position, soundVol);
+
         Time.timeScale = LevelExitSlowMoFactor;
         FindObjectOfType<Player>().ExitLevel();
         Destroy(FindObjectOfType<ScenePersist>());

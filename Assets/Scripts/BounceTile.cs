@@ -9,18 +9,31 @@ public class BounceTile : MonoBehaviour
     [SerializeField] float soundVol = 0.25f;
 
     Animator bounceAnimator;
+    BoxCollider2D bounceArea;
 
     void Start()
     {
         bounceAnimator = GetComponent<Animator>();
+        bounceArea = GetComponent<BoxCollider2D>();
+    }
+
+    private void Update()
+    {
+        BounceAnimation();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        bounceAnimator.SetTrigger("Tile Bounce");
+        if (bounceArea.IsTouchingLayers(LayerMask.GetMask("Player")))
+        {
+            GameObject audioListener = GameObject.FindWithTag("AudioListener");
+            AudioSource.PlayClipAtPoint(bounceSFX, audioListener.transform.position, soundVol);
+        }
+    }
 
-        GameObject audioListener = GameObject.FindWithTag("AudioListener");
-        AudioSource.PlayClipAtPoint(bounceSFX, audioListener.transform.position, soundVol);
-
+    private void BounceAnimation()
+    {
+        bool playerIsBouncing = bounceArea.IsTouchingLayers(LayerMask.GetMask("Player"));
+        bounceAnimator.SetBool("Bouncing", playerIsBouncing);
     }
 }

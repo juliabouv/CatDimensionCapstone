@@ -2689,6 +2689,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1351044161058811659, guid: b3cf497cbb50342c6a5211766a8bcb41,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b22aef935a7a14cdc8657cefa095e0f5, type: 3}
     - target: {fileID: 1665303852410143508, guid: b3cf497cbb50342c6a5211766a8bcb41,
         type: 3}
       propertyPath: m_Name
@@ -2837,6 +2842,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -2.7104282
       objectReference: {fileID: 0}
+    - target: {fileID: 3737051016986541294, guid: 8f6c43fc70ee4484d8e317cde4ff36e9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 12.336176
+      objectReference: {fileID: 0}
     - target: {fileID: 3737051016986541295, guid: 8f6c43fc70ee4484d8e317cde4ff36e9,
         type: 3}
       propertyPath: m_BoundingShape2D
@@ -2912,6 +2922,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -2.7104282
       objectReference: {fileID: 0}
+    - target: {fileID: 3737051017914278530, guid: 8f6c43fc70ee4484d8e317cde4ff36e9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 12.336176
+      objectReference: {fileID: 0}
     - target: {fileID: 3737051017914278531, guid: 8f6c43fc70ee4484d8e317cde4ff36e9,
         type: 3}
       propertyPath: m_BoundingShape2D
@@ -2951,6 +2966,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.7104282
+      objectReference: {fileID: 0}
+    - target: {fileID: 3737051018468442722, guid: 8f6c43fc70ee4484d8e317cde4ff36e9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 12.336176
       objectReference: {fileID: 0}
     - target: {fileID: 3737051018468442723, guid: 8f6c43fc70ee4484d8e317cde4ff36e9,
         type: 3}

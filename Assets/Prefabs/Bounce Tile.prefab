@@ -73,13 +73,13 @@ SpriteRenderer:
   m_SortingLayerID: 1366280379
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3464989853387440261, guid: 6e31bc362e5e843d3ae18de06d2354d4,
+  m_Sprite: {fileID: 9063334676719630885, guid: c4083b86a9a264f579f54a835d79831f,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 0.71875}
+  m_Size: {x: 1.015625, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -95,21 +95,21 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00399971, y: 0.21624756}
+  m_Offset: {x: 0.00399971, y: 0.15946198}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 0.71875}
-    newSize: {x: 1, y: 0.71875}
+    oldSize: {x: 1.015625, y: 1}
+    newSize: {x: 1.015625, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.75022507, y: 0.27722168}
+  m_Size: {x: 0.75022507, y: 0.1068573}
   m_EdgeRadius: 0
 --- !u!95 &854141291
 Animator:
@@ -119,7 +119,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9120667207718907211}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 1ed723acbba304f2b842c6505dd55eb1, type: 2}
   m_CullingMode: 0
@@ -161,15 +161,15 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 0.71875}
-    newSize: {x: 1, y: 0.71875}
+    oldSize: {x: 1.015625, y: 1}
+    newSize: {x: 1.015625, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.51506424, y: 0.07901001}
-      - {x: -0.5095291, y: 0.0854187}
-      - {x: -0.51091766, y: -0.35999298}
-      - {x: 0.5153847, y: -0.35437012}
+    - - {x: 0.5029068, y: -0.09921265}
+      - {x: -0.49586105, y: -0.09049988}
+      - {x: -0.51091766, y: -0.45936584}
+      - {x: 0.50091934, y: -0.45401764}

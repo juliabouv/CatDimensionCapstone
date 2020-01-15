@@ -11,6 +11,7 @@ public class Player : MonoBehaviour {
     [SerializeField] public int currentHealth = 2;
     [SerializeField] float runSpeed = 8f;
     [SerializeField] float jumpSpeed = 28f;
+    [SerializeField] float fallSlower = 2.5f;
     [SerializeField] float bounceTileSpeed = 38f;
     [SerializeField] float invulnerabilityTime = 2f;
     [SerializeField] Vector2 deathKick = new Vector2(25f, 25f);
@@ -54,21 +55,24 @@ public class Player : MonoBehaviour {
         if (!isAlive) { return; }
 
         Run();
-        //Acceleration();
         Jump();
+        BetterJump();
         FlipSprite();
         Hazards();
         Die();
         FindObjectOfType<GameSession>().UpdateHealthBar(currentHealth, maxHealth);
     }
 
-    private void Acceleration()
-    {
-        float fHorizontalVelocity = myRigidBody.velocity.x;
-        fHorizontalVelocity += CrossPlatformInputManager.GetAxisRaw("Horizontal");
-        fHorizontalVelocity *= Mathf.Pow(1f - fHorizontalDamping, Time.deltaTime * 10f);
-        myRigidBody.velocity = new Vector2(fHorizontalVelocity, myRigidBody.velocity.y);
-    }
+    //private void Run()
+    //{
+    //    float fHorizontalVelocity = myRigidBody.velocity.x;
+    //    fHorizontalVelocity += CrossPlatformInputManager.GetAxisRaw("Horizontal");
+    //    fHorizontalVelocity *= Mathf.Pow(1f - fHorizontalDamping, Time.deltaTime * 10f);
+    //    myRigidBody.velocity = new Vector2(fHorizontalVelocity, myRigidBody.velocity.y);
+
+    //    bool playerHasHorizontalSpeed = Mathf.Abs(myRigidBody.velocity.x) > Mathf.Epsilon;
+    //    myAnimator.SetBool("Walking", playerHasHorizontalSpeed);
+    //}
 
     private void Run()
     {
@@ -112,9 +116,17 @@ public class Player : MonoBehaviour {
         }
     }
 
+    private void BetterJump()
+    {
+        if (myRigidBody.velocity.y < 0)
+        {
+            myRigidBody.velocity += Vector2.up * -10 / (fallSlower - 1) * Time.deltaTime;
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy")) && !(GameObject.Find("Player").transform.position.y >= collision.transform.position.y))
+        if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy")) || myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Slippery Enemy")) && !(GameObject.Find("Player").transform.position.y >= collision.transform.position.y))
         {
             GameObject audioListener = GameObject.FindWithTag("AudioListener");
             AudioSource.PlayClipAtPoint(playerDeathSFX, audioListener.transform.position, soundVol);
