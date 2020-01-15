@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5614685475276760552}
   - component: {fileID: 5614685475276760553}
   - component: {fileID: 5614685475276760558}
+  - component: {fileID: 1319054478}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -184,6 +185,7 @@ MonoBehaviour:
   currentHealth: 2
   runSpeed: 8
   jumpSpeed: 30
+  fallSlower: 4.5
   bounceTileSpeed: 38
   invulnerabilityTime: 2
   deathKick: {x: 25, y: 25}
@@ -192,3 +194,19 @@ MonoBehaviour:
   fJumpPressedRememberTime: 0.2
   fGroundedRememberTime: 0.15
   fHorizontalDamping: 0.22
+--- !u!70 &1319054478
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5614685475276760559}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.3000641, y: 0.18662262}
+  m_Size: {x: 0.33737183, y: 0.38861084}
+  m_Direction: 0
