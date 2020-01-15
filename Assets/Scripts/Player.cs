@@ -61,6 +61,8 @@ public class Player : MonoBehaviour {
         Hazards();
         Die();
         FindObjectOfType<GameSession>().UpdateHealthBar(currentHealth, maxHealth);
+        //Debug.Log("Player" + GameObject.Find("Player").transform.position.y);
+        //Debug.Log("Enemy" + GameObject.Find("Enemy").transform.position.y * 1.2);
     }
 
     //private void Run()
@@ -126,11 +128,10 @@ public class Player : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy")) || myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Slippery Enemy")) && !(GameObject.Find("Player").transform.position.y >= collision.transform.position.y))
+        if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy")) && !(GameObject.Find("Player").transform.position.y >= collision.transform.position.y))
         {
             GameObject audioListener = GameObject.FindWithTag("AudioListener");
             AudioSource.PlayClipAtPoint(playerDeathSFX, audioListener.transform.position, soundVol);
-
             StartCoroutine(GetInvulnerable());
             currentHealth--;
             FindObjectOfType<GameSession>().UpdateHealthBar(currentHealth, maxHealth);
@@ -138,6 +139,14 @@ public class Player : MonoBehaviour {
         else if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy")) && GameObject.Find("Player").transform.position.y >= collision.transform.position.y)
         {
             FindObjectOfType<EnemyMovement>().killEnemy(collision.gameObject);
+        }
+        else if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Slippery Enemy")))
+        {
+            GameObject audioListener = GameObject.FindWithTag("AudioListener");
+            AudioSource.PlayClipAtPoint(playerDeathSFX, audioListener.transform.position, soundVol);
+            StartCoroutine(GetInvulnerable());
+            currentHealth--;
+            FindObjectOfType<GameSession>().UpdateHealthBar(currentHealth, maxHealth);
         }
     }
 

@@ -5287,28 +5287,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1284123430}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1319054477 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5614685475276760559, guid: 28465653dbe884e959d12c276f9300f2,
-    type: 3}
-  m_PrefabInstance: {fileID: 5614685475451594797}
-  m_PrefabAsset: {fileID: 0}
---- !u!70 &1319054478
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1319054477}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.3000641, y: 0.18662262}
-  m_Size: {x: 0.33737183, y: 0.38861084}
-  m_Direction: 0
 --- !u!1001 &1327615517
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10091,11 +10069,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5614685475276760558, guid: 28465653dbe884e959d12c276f9300f2,
-        type: 3}
-      propertyPath: fallSlower
-      value: 4.5
-      objectReference: {fileID: 0}
     - target: {fileID: 5614685475276760559, guid: 28465653dbe884e959d12c276f9300f2,
         type: 3}
       propertyPath: m_Name
