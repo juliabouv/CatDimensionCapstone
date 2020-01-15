@@ -7,8 +7,6 @@ using UnityStandardAssets.CrossPlatformInput;
 public class Player : MonoBehaviour {
 
     // Config
-    [SerializeField] public int maxHealth = 4;
-    [SerializeField] public int currentHealth = 2;
     [SerializeField] float runSpeed = 8f;
     [SerializeField] float jumpSpeed = 28f;
     [SerializeField] float fallSlower = 2.5f;
@@ -60,9 +58,7 @@ public class Player : MonoBehaviour {
         FlipSprite();
         Hazards();
         Die();
-        FindObjectOfType<GameSession>().UpdateHealthBar(currentHealth, maxHealth);
-        //Debug.Log("Player" + GameObject.Find("Player").transform.position.y);
-        //Debug.Log("Enemy" + GameObject.Find("Enemy").transform.position.y * 1.2);
+        FindObjectOfType<GameSession>().UpdateHealthBar();
     }
 
     //private void Run()
@@ -133,8 +129,8 @@ public class Player : MonoBehaviour {
             GameObject audioListener = GameObject.FindWithTag("AudioListener");
             AudioSource.PlayClipAtPoint(playerDeathSFX, audioListener.transform.position, soundVol);
             StartCoroutine(GetInvulnerable());
-            currentHealth--;
-            FindObjectOfType<GameSession>().UpdateHealthBar(currentHealth, maxHealth);
+            FindObjectOfType<GameSession>().currentHealth--;
+            FindObjectOfType<GameSession>().UpdateHealthBar();
         }
         else if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy")) && GameObject.Find("Player").transform.position.y >= collision.transform.position.y)
         {
@@ -145,8 +141,8 @@ public class Player : MonoBehaviour {
             GameObject audioListener = GameObject.FindWithTag("AudioListener");
             AudioSource.PlayClipAtPoint(playerDeathSFX, audioListener.transform.position, soundVol);
             StartCoroutine(GetInvulnerable());
-            currentHealth--;
-            FindObjectOfType<GameSession>().UpdateHealthBar(currentHealth, maxHealth);
+            FindObjectOfType<GameSession>().currentHealth--;
+            FindObjectOfType<GameSession>().UpdateHealthBar();
         }
     }
 
@@ -158,8 +154,8 @@ public class Player : MonoBehaviour {
             AudioSource.PlayClipAtPoint(playerDeathSFX, audioListener.transform.position, soundVol);
 
             StartCoroutine(GetInvulnerable());
-            currentHealth--;
-            FindObjectOfType<GameSession>().UpdateHealthBar(currentHealth, maxHealth);
+            FindObjectOfType<GameSession>().currentHealth--;
+            FindObjectOfType<GameSession>().UpdateHealthBar();
         }
         else if(myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Death Hazards")))
         {
@@ -167,27 +163,29 @@ public class Player : MonoBehaviour {
             myAnimator.SetTrigger("Dying");
             GetComponent<Rigidbody2D>().velocity = deathKick;
             FindObjectOfType<GameSession>().ProcessPlayerDeath();
+            FindObjectOfType<GameSession>().currentHealth = 2;
         }
     }
 
     private void Die()
     {
-        if (currentHealth < 1)
+        if (FindObjectOfType<GameSession>().currentHealth < 1)
         {
             isAlive = false;
             Debug.Log("Player Died");
             myAnimator.SetTrigger("Dying");
             GetComponent<Rigidbody2D>().velocity = deathKick;
             FindObjectOfType<GameSession>().ProcessPlayerDeath();
+            FindObjectOfType<GameSession>().currentHealth = 2;
         }
     }
 
     public void AddLife()
     {
-        if (currentHealth < maxHealth)
+        if (FindObjectOfType<GameSession>().currentHealth < FindObjectOfType<GameSession>().maxHealth)
         {
-            currentHealth++;
-            FindObjectOfType<GameSession>().UpdateHealthBar(currentHealth, maxHealth);
+            FindObjectOfType<GameSession>().currentHealth++;
+            FindObjectOfType<GameSession>().UpdateHealthBar();
         }
     }
 

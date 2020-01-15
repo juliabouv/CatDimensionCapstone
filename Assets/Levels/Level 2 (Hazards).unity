@@ -6240,6 +6240,16 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5614685475276760558, guid: 28465653dbe884e959d12c276f9300f2,
+        type: 3}
+      propertyPath: deathKick.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5614685475276760558, guid: 28465653dbe884e959d12c276f9300f2,
+        type: 3}
+      propertyPath: deathKick.y
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5614685475276760559, guid: 28465653dbe884e959d12c276f9300f2,
         type: 3}
       propertyPath: m_Name

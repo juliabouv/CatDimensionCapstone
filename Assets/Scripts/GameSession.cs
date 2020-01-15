@@ -10,6 +10,8 @@ public class GameSession : MonoBehaviour {
 
     [SerializeField] public int playerLives = 9;
     [SerializeField] public int score = 0;
+    [SerializeField] public int maxHealth = 4;
+    [SerializeField] public int currentHealth = 2;
 
     [SerializeField] float DeathLoadDelay = 1f;
 
@@ -46,7 +48,7 @@ public class GameSession : MonoBehaviour {
         scoreText.text = score.ToString();
     }
 
-    public void UpdateHealthBar(int currentHealth, int maxHealth)
+    public void UpdateHealthBar()
     {
         healthBar.fillAmount = (float)currentHealth / (float)maxHealth;
     }
