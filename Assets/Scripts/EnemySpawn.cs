@@ -6,7 +6,7 @@ public class EnemySpawn : MonoBehaviour
 {
     [SerializeField] public GameObject enemy;
     [SerializeField] public Transform enemyPos;
-    [SerializeField] private float repeatRate = 2.0f;
+    [SerializeField] private float repeatRate = 4.0f;
 
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -22,7 +22,6 @@ public class EnemySpawn : MonoBehaviour
     void EnemySpawner()
     {
         Instantiate(enemy, enemyPos.position, Quaternion.identity);
-        Debug.Log("MEthod Called");
     }
 
 }
