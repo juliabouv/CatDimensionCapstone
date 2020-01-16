@@ -350,9 +350,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f6ed14b1e061443f81c61d288a74d55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickupEffect: {fileID: 1000011945391522, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e,
-    type: 3}
+  pickupEffect: {fileID: 100000, guid: 3156817f64ec68948ad6bb26569b9ef5, type: 3}
   multiplier: 4
+  duration: 8
 --- !u!58 &163609540
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -7,20 +7,32 @@ public class GrowPowerUp : MonoBehaviour
 
     public GameObject pickupEffect;
     public float multiplier = 1.4f;
+    public float duration = 8f;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            Pickup(collision);
+            StartCoroutine( Pickup(collision) );
         }
     }
 
-    void Pickup(Collider2D player)
+    IEnumerator Pickup(Collider2D player)
     {
-        Instantiate(pickupEffect, transform.position, Quaternion.identity);
+        FindObjectOfType<Player>().vulnerability = false;
 
-        player.transform.localScale *= multiplier;
+        //Instantiate(pickupEffect, transform.position, tranform.rotation);
+
+        player.transform.localScale = new Vector3 (multiplier, multiplier, 0);
+
+        GetComponent<SpriteRenderer>().enabled = false;
+        GetComponent<Animator>().enabled = false;
+        GetComponent<Collider2D>().enabled = false;
+
+        yield return new WaitForSeconds(duration);
+
+        FindObjectOfType<Player>().vulnerability = true;
+        player.transform.localScale = new Vector3(1, 1, 0);
 
         Destroy(gameObject);
     }
