@@ -171,8 +171,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.037973404, y: -0.08045578}
-  m_Size: {x: 0.5449562, y: 0.5893936}
+  m_Offset: {x: -0.037973404, y: -0.0870018}
+  m_Size: {x: 0.5449562, y: 0.637413}
   m_Direction: 0
 --- !u!61 &5614685475276760553
 BoxCollider2D:
@@ -187,7 +187,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.024999619, y: -0.27243042}
+  m_Offset: {x: -0.024999619, y: -0.27770853}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -198,7 +198,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5149784, y: 0.21878624}
+  m_Size: {x: 0.5149784, y: 0.22934246}
   m_EdgeRadius: 0
 --- !u!114 &5614685475276760558
 MonoBehaviour:
@@ -220,7 +220,7 @@ MonoBehaviour:
   firePoint: {fileID: 1754676362}
   fireShotPrefab: {fileID: 7632765628253424555, guid: e595effc734464937ad929b9ddaf8f47,
     type: 3}
-  deathKick: {x: 25, y: 25}
+  deathKick: {x: 5, y: 5}
   playerDeathSFX: {fileID: 8300000, guid: b513b5d26c37c48549e4e5e1c438f290, type: 3}
   soundVol: 0.25
   fJumpPressedRememberTime: 0.2

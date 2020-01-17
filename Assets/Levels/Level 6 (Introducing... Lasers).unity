@@ -593,7 +593,7 @@ TilemapCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -635,7 +635,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1386821621
-  m_SortingLayer: 7
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0.007936537, y: 0.007936537, z: 0}
@@ -2204,7 +2204,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1386821621
-  m_SortingLayer: 7
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -3218,7 +3218,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1366280379
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0.007936537, y: 0.007936537, z: 0}
@@ -6313,17 +6313,17 @@ PrefabInstance:
     - target: {fileID: 3737051018112379482, guid: 8f6c43fc70ee4484d8e317cde4ff36e9,
         type: 3}
       propertyPath: orthographic size
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3737051018112379487, guid: 8f6c43fc70ee4484d8e317cde4ff36e9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 36.194805
+      value: 32.630527
       objectReference: {fileID: 0}
     - target: {fileID: 3737051018112379487, guid: 8f6c43fc70ee4484d8e317cde4ff36e9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -18.210297
+      value: -18.194641
       objectReference: {fileID: 0}
     - target: {fileID: 3737051018333785793, guid: 8f6c43fc70ee4484d8e317cde4ff36e9,
         type: 3}
@@ -6590,7 +6590,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -623213873
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}

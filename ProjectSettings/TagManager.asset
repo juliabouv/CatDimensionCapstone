@@ -8,7 +8,7 @@ TagManager:
   - Enemy
   - Hazards
   - FxTemporaire
-  - BounceTile
+  - BounceAnimationTrigger
   layers:
   - Default
   - TransparentFX

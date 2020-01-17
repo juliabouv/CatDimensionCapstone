@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 854141291}
   - component: {fileID: 854141290}
   - component: {fileID: 546090700}
+  - component: {fileID: 1964652177}
   m_Layer: 15
   m_Name: Bounce Tile
   m_TagString: Untagged
@@ -71,7 +72,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1366280379
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 9063334676719630885, guid: c4083b86a9a264f579f54a835d79831f,
     type: 3}
@@ -95,10 +96,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00399971, y: 0.15946198}
+  m_Offset: {x: 0.00399971, y: 0.16662216}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -109,7 +110,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.75022507, y: 0.1068573}
+  m_Size: {x: 0.75022507, y: 0.092536926}
   m_EdgeRadius: 0
 --- !u!95 &854141291
 Animator:
@@ -154,7 +155,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -169,7 +170,23 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.5029068, y: -0.09921265}
-      - {x: -0.49586105, y: -0.09049988}
-      - {x: -0.51091766, y: -0.45936584}
-      - {x: 0.50091934, y: -0.45401764}
+    - - {x: 0.40877724, y: 0.26584625}
+      - {x: -0.4378128, y: 0.26685333}
+      - {x: -0.46023273, y: -0.5487976}
+      - {x: 0.3993168, y: -0.5661011}
+--- !u!70 &1964652177
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9120667207718907211}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.007241097, y: -0.28600827}
+  m_Size: {x: 1.0011448, y: 0.42798406}
+  m_Direction: 1
