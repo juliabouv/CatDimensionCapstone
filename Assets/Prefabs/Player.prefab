@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1754676361
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1754676362}
+  m_Layer: 10
+  m_Name: FirePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1754676362
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754676361}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.529, y: 0.118, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5614685476134595644}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5614685475276760559
 GameObject:
   m_ObjectHideFlags: 0
@@ -33,7 +63,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 30.21, y: 5.35, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1754676362}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -92,7 +123,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -8028543
-  m_SortingLayer: 9
+  m_SortingLayer: 10
   m_SortingOrder: 0
   m_Sprite: {fileID: 3571827269351770130, guid: d7ff9d329005c4f0ca3312ff953f67c2,
     type: 3}
@@ -181,19 +212,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f138888e138f4e1ab03743580048ec3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 4
-  currentHealth: 2
   runSpeed: 8
   jumpSpeed: 30
   fallSlower: 4.5
   bounceTileSpeed: 38
   invulnerabilityTime: 2
+  firePoint: {fileID: 1754676362}
+  fireShotPrefab: {fileID: 7632765628253424555, guid: e595effc734464937ad929b9ddaf8f47,
+    type: 3}
   deathKick: {x: 25, y: 25}
   playerDeathSFX: {fileID: 8300000, guid: b513b5d26c37c48549e4e5e1c438f290, type: 3}
   soundVol: 0.25
   fJumpPressedRememberTime: 0.2
   fGroundedRememberTime: 0.15
   fHorizontalDamping: 0.22
+  vulnerability: 1
+  firePowerup: 0
+  myBodyCollider: {fileID: 0}
 --- !u!70 &1319054478
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

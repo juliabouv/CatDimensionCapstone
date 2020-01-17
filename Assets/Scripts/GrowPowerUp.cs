@@ -24,7 +24,7 @@ public class GrowPowerUp : MonoBehaviour
     {
         FindObjectOfType<Player>().vulnerability = false;
 
-        //Instantiate(pickupEffect, transform.position, tranform.rotation);
+        Instantiate(pickupEffect, transform.position, transform.rotation);
 
         GameObject audioListener = GameObject.FindWithTag("AudioListener");
         AudioSource audioSource = audioListener.GetComponent<AudioSource>();

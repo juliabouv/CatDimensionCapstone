@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Hazards
   - FxTemporaire
+  - BounceTile
   layers:
   - Default
   - TransparentFX
@@ -47,6 +48,9 @@ TagManager:
     locked: 0
   - name: Background
     uniqueID: 3187714035
+    locked: 0
+  - name: Background Overlayer
+    uniqueID: 2183398561
     locked: 0
   - name: Decor
     uniqueID: 3671753423
