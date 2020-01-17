@@ -25,8 +25,10 @@ public class Player : MonoBehaviour {
 
     // State
     bool isAlive = true;
+    private bool facingRight = true;
     public bool vulnerability = true;
-    
+    public bool firePowerup = false;
+
 
     // Cached component references
     Rigidbody2D myRigidBody;
@@ -56,7 +58,6 @@ public class Player : MonoBehaviour {
         Run();
         Jump();
         BetterJump();
-        FlipSprite();
         Hazards();
         Die();
         FindObjectOfType<GameSession>().UpdateHealthBar();
@@ -81,6 +82,27 @@ public class Player : MonoBehaviour {
 
         bool playerHasHorizontalSpeed = Mathf.Abs(myRigidBody.velocity.x) > Mathf.Epsilon;
         myAnimator.SetBool("Walking", playerHasHorizontalSpeed);
+
+        if (playerHasHorizontalSpeed)
+        {
+            if (controlThrow > 0 && !facingRight)
+            {
+                
+                FlipSprite();
+            }
+            else if (controlThrow < 0 && facingRight)
+            {
+                FlipSprite();
+            }
+        }
+    }
+
+    private void ShootFire()
+    {
+        if(firePowerup)
+        {
+
+        }
     }
 
     private void Jump()
@@ -222,16 +244,13 @@ public class Player : MonoBehaviour {
 
     private void FlipSprite()
     {
-        bool playerHasHorizontalSpeed = Mathf.Abs(myRigidBody.velocity.x) > Mathf.Epsilon;
-        if (playerHasHorizontalSpeed)
-        {
-            transform.localScale = new Vector2(Mathf.Sign(myRigidBody.velocity.x), 1f);
-        }
+        facingRight = !facingRight;
+
+        transform.Rotate(0f, 180f, 0f);
     }
 
     public void ExitLevel()
     {
         myAnimator.SetTrigger("Exiting Level");
     }
-
 }

@@ -8,6 +8,9 @@ public class GrowPowerUp : MonoBehaviour
     public GameObject pickupEffect;
     public float multiplier = 1.4f;
     public float duration = 8f;
+    [SerializeField] AudioClip powerupPickupSFX;
+    [SerializeField] float soundVol = 0.4f;
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -23,6 +26,11 @@ public class GrowPowerUp : MonoBehaviour
 
         //Instantiate(pickupEffect, transform.position, tranform.rotation);
 
+        GameObject audioListener = GameObject.FindWithTag("AudioListener");
+        AudioSource audioSource = audioListener.GetComponent<AudioSource>();
+        audioSource.Pause();
+        AudioSource.PlayClipAtPoint(powerupPickupSFX, audioListener.transform.position, soundVol);
+
         player.transform.localScale = new Vector3 (multiplier, multiplier, 0);
 
         GetComponent<SpriteRenderer>().enabled = false;
@@ -31,6 +39,7 @@ public class GrowPowerUp : MonoBehaviour
 
         yield return new WaitForSeconds(duration);
 
+        audioSource.Play();
         FindObjectOfType<Player>().vulnerability = true;
         player.transform.localScale = new Vector3(1, 1, 0);
 
