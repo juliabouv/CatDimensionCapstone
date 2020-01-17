@@ -12,6 +12,8 @@ public class Player : MonoBehaviour {
     [SerializeField] float fallSlower = 2.5f;
     [SerializeField] float bounceTileSpeed = 38f;
     [SerializeField] float invulnerabilityTime = 2f;
+    [SerializeField] Transform firePoint;
+    [SerializeField] GameObject fireShotPrefab;
     [SerializeField] Vector2 deathKick = new Vector2(25f, 25f);
     [SerializeField] AudioClip playerDeathSFX;
     [SerializeField] float soundVol = 0.2f;
@@ -56,6 +58,7 @@ public class Player : MonoBehaviour {
         if (!isAlive) { return; }
 
         Run();
+        ShootFire();
         Jump();
         BetterJump();
         Hazards();
@@ -101,7 +104,10 @@ public class Player : MonoBehaviour {
     {
         if(firePowerup)
         {
-
+            if(CrossPlatformInputManager.GetButtonDown("Fire1"))
+            {
+                Instantiate(fireShotPrefab, firePoint.position, firePoint.rotation);
+            }
         }
     }
 
