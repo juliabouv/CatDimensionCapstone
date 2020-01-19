@@ -15,7 +15,7 @@ public class CatLadyBoss : MonoBehaviour
     public Slider healthBar;
 
     private float timeBetweenShots;
-    public float startTimeBetweenShots;
+    public float startTimeBetweenShots = 2f;
     public GameObject projectile;
 
     public Transform player;
@@ -34,7 +34,6 @@ public class CatLadyBoss : MonoBehaviour
     
     void Update()
     {
-        Debug.Log(health);
         healthBar.value = health;
 
         if (Vector2.Distance(transform.position, player.position) > stoppingDistance)
@@ -107,9 +106,11 @@ public class CatLadyBoss : MonoBehaviour
 
     IEnumerator SlowLoad()
     {
+        startTimeBetweenShots = 100f;
         myAnimator.SetTrigger("Death");
         yield return new WaitForSecondsRealtime(loadDelay);
         health = 100;
+        startTimeBetweenShots = 2f;
         var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex + 1);
     }

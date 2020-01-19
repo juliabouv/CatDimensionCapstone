@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class LevelExit : MonoBehaviour {
 
-    [SerializeField] float LevelLoadDelay = 4f;
+    [SerializeField] float LevelLoadDelay = 3f;
     [SerializeField] float LevelExitSlowMoFactor = 0.5f;
 
     [SerializeField] AudioClip portalEnterSFX;
