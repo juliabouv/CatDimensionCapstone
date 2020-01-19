@@ -13,7 +13,6 @@ public class CatLadyBoss : MonoBehaviour
     public float retreatDistance;
     public float loadDelay = 2f;
     public Slider healthBar;
-    public Transform firePoint;
 
     private float timeBetweenShots;
     public float startTimeBetweenShots;
@@ -35,6 +34,7 @@ public class CatLadyBoss : MonoBehaviour
     
     void Update()
     {
+        Debug.Log(health);
         healthBar.value = health;
 
         if (Vector2.Distance(transform.position, player.position) > stoppingDistance)
@@ -62,36 +62,27 @@ public class CatLadyBoss : MonoBehaviour
         {
             timeBetweenShots -= Time.deltaTime;
         }
-        
 
-        //if (IsFacingRight())
-        //{
-        //    myRigidBody.velocity = new Vector2(moveSpeed, 0f);
-        //}
-        //else
-        //{
-        //    myRigidBody.velocity = new Vector2(-moveSpeed, 0f);
-        //}
+
+        if (IsFacingRight() && player.position.x < transform.position.x)
+        {
+            flipSprite();
+        }
+        else if ((!IsFacingRight()) && player.position.x > transform.position.x)
+        {
+            flipSprite();
+        }
     }
 
-    //bool IsFacingRight()
-    //{
-    //    return transform.localScale.x > 0;
-    //}
+    void flipSprite()
+    {
+        transform.localScale = new Vector2(-(Mathf.Sign(myRigidBody.velocity.x)), 1f);
+    }
 
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //    if (collision.gameObject.name == "RightBossPause")
-    //    {
-    //        transform.Rotate(0f, 180f, 0f);
-
-    //    }
-    //    else if (collision.gameObject.name == "LeftBossPause")
-    //    {
-    //        transform.Rotate(0f, 180f, 0f);
-
-    //    }
-    //}
+    bool IsFacingRight()
+    {
+        return transform.localScale.x > 0;
+    }
 
     public void TakeDamage(int damage)
     {
@@ -103,6 +94,12 @@ public class CatLadyBoss : MonoBehaviour
         }
     }
 
+    public void ResetHealth()
+    {
+        health = 100;
+        healthBar.value = health;
+    }
+
     void Die()
     {
         StartCoroutine(SlowLoad());
@@ -112,6 +109,7 @@ public class CatLadyBoss : MonoBehaviour
     {
         myAnimator.SetTrigger("Death");
         yield return new WaitForSecondsRealtime(loadDelay);
+        health = 100;
         var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex + 1);
     }

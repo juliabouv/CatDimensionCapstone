@@ -57,11 +57,11 @@ public class GameSession : MonoBehaviour {
     {
         if (playerLives > 1)
         {
+            FindObjectOfType<CatLadyBoss>().ResetHealth();
             TakeLife();
         }
         else
         {
-
             ResetGameSession();
         }
     }

@@ -21,7 +21,11 @@ public class FireShot : MonoBehaviour
         if (shot.IsTouchingLayers(LayerMask.GetMask("Enemy")))
         {
             FindObjectOfType<EnemyMovement>().killEnemy(collision.gameObject);
-            Debug.Log("We are also here");
+        }
+
+        if (shot.IsTouchingLayers(LayerMask.GetMask("Boss")))
+        {
+            FindObjectOfType<CatLadyBoss>().TakeDamage(5);
         }
 
         Destroy(gameObject);
