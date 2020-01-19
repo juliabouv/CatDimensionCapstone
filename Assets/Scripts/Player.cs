@@ -90,7 +90,6 @@ public class Player : MonoBehaviour {
         {
             if (controlThrow > 0 && !facingRight)
             {
-                
                 FlipSprite();
             }
             else if (controlThrow < 0 && facingRight)
@@ -157,11 +156,7 @@ public class Player : MonoBehaviour {
         {
             if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy")) && !(GameObject.Find("Player").transform.position.y >= collision.transform.position.y))
             {
-                GameObject audioListener = GameObject.FindWithTag("AudioListener");
-                AudioSource.PlayClipAtPoint(playerDeathSFX, audioListener.transform.position, soundVol);
-                StartCoroutine(GetInvulnerable());
-                FindObjectOfType<GameSession>().currentHealth--;
-                FindObjectOfType<GameSession>().UpdateHealthBar();
+                PlayerInjured();
             }
             else if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy")) && GameObject.Find("Player").transform.position.y >= collision.transform.position.y)
             {
@@ -169,11 +164,7 @@ public class Player : MonoBehaviour {
             }
             else if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Slippery Enemy")))
             {
-                GameObject audioListener = GameObject.FindWithTag("AudioListener");
-                AudioSource.PlayClipAtPoint(playerDeathSFX, audioListener.transform.position, soundVol);
-                StartCoroutine(GetInvulnerable());
-                FindObjectOfType<GameSession>().currentHealth--;
-                FindObjectOfType<GameSession>().UpdateHealthBar();
+                PlayerInjured();
             }
         }
         else if (vulnerability == false)
@@ -220,6 +211,15 @@ public class Player : MonoBehaviour {
             FindObjectOfType<GameSession>().ProcessPlayerDeath();
             FindObjectOfType<GameSession>().currentHealth = 2;
         }
+    }
+
+    public void PlayerInjured()
+    {
+        GameObject audioListener = GameObject.FindWithTag("AudioListener");
+        AudioSource.PlayClipAtPoint(playerDeathSFX, audioListener.transform.position, soundVol);
+        StartCoroutine(GetInvulnerable());
+        FindObjectOfType<GameSession>().currentHealth--;
+        FindObjectOfType<GameSession>().UpdateHealthBar();
     }
 
     public void AddLife()
