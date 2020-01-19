@@ -69,6 +69,8 @@ public class GameSession : MonoBehaviour {
     private void TakeLife()
     {
         playerLives--;
+        currentHealth = 2;
+        UpdateHealthBar();
 
         StartCoroutine(SlowDeathLoad());
     }
