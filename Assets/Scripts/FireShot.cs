@@ -23,7 +23,7 @@ public class FireShot : MonoBehaviour
             FindObjectOfType<EnemyMovement>().killEnemy(collision.gameObject);
         }
 
-        if (shot.IsTouchingLayers(LayerMask.GetMask("Boss")))
+        if (shot.IsTouchingLayers(LayerMask.GetMask("CatLady")))
         {
             FindObjectOfType<CatLadyBoss>().TakeDamage(5);
         }

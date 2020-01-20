@@ -5,7 +5,7 @@ using UnityEngine;
 public class TreatPickup : MonoBehaviour
 {
     [SerializeField] AudioClip catPurrSFX;
-    [SerializeField] float soundVol = 0.25f;
+    [SerializeField] float soundVol = 0.5f;
 
     bool treatPicked = false;
 

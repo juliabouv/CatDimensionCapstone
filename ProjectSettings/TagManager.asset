@@ -9,6 +9,8 @@ TagManager:
   - Hazards
   - FxTemporaire
   - BounceAnimationTrigger
+  - BoxCauseDamage
+  - BoxReceiveDamage
   layers:
   - Default
   - TransparentFX
@@ -30,8 +32,8 @@ TagManager:
   - Slippery Enemy
   - Weapons
   - Dog Bait
+  - CatLady
   - Boss
-  - 
   - 
   - 
   - 

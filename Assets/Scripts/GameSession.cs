@@ -59,6 +59,7 @@ public class GameSession : MonoBehaviour {
         {
             TakeLife();
             FindObjectOfType<CatLadyBoss>().ResetHealth();
+            FindObjectOfType<BoxBoss>().ResetHealth();
         }
         else
         {

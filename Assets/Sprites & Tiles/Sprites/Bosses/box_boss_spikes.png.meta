@@ -1,0 +1,547 @@
+fileFormatVersion: 2
+guid: 9fefa8430341b43e9be9c0a11f275659
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 679676578278931870
+    second: box_boss_spikes_0
+  - first:
+      213: 7845399953052006619
+    second: box_boss_spikes_1
+  - first:
+      213: -8742448788741295979
+    second: box_boss_spikes_2
+  - first:
+      213: -358824127025065349
+    second: box_boss_spikes_3
+  - first:
+      213: -5798690616493080531
+    second: box_boss_spikes_4
+  - first:
+      213: 5303045926304931513
+    second: box_boss_spikes_5
+  - first:
+      213: -6038010220886818494
+    second: box_boss_spikes_6
+  - first:
+      213: 70968108222225461
+    second: box_boss_spikes_7
+  - first:
+      213: 5688348339414763951
+    second: box_boss_spikes_8
+  - first:
+      213: 2625923221500420824
+    second: box_boss_spikes_9
+  - first:
+      213: 19444553435253173
+    second: box_boss_spikes_10
+  - first:
+      213: 7958543925860065113
+    second: box_boss_spikes_11
+  - first:
+      213: 4818032561557908865
+    second: box_boss_spikes_12
+  - first:
+      213: 8249042729742682298
+    second: box_boss_spikes_13
+  - first:
+      213: -7898817499319607399
+    second: box_boss_spikes_14
+  - first:
+      213: -7290686348568468620
+    second: box_boss_spikes_15
+  - first:
+      213: -8470207031451242320
+    second: box_boss_spikes_16
+  - first:
+      213: 4765176780567765253
+    second: box_boss_spikes_17
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: box_boss_spikes_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 374
+        width: 158
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4c83405bc2914f01964326821956277
+      internalID: 679676578278931870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: box_boss_spikes_1
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 370
+        width: 129
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f526e7afe4fee450591566bbbaab2a9e
+      internalID: 7845399953052006619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: box_boss_spikes_2
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 370
+        width: 124
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 525b174208da64ad79098ea34b6c548a
+      internalID: -8742448788741295979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: box_boss_spikes_3
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 370
+        width: 124
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3d77e43bb2914824b30ef453bf4d493
+      internalID: -358824127025065349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: box_boss_spikes_4
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 370
+        width: 124
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf98d66f60b794b0fb1a55026a610dee
+      internalID: -5798690616493080531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: box_boss_spikes_5
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 370
+        width: 124
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 799db3bca7736410db459a5bad397225
+      internalID: 5303045926304931513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: box_boss_spikes_6
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 193
+        width: 124
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f84bf519a25d4401792edeac758bb2fe
+      internalID: -6038010220886818494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: box_boss_spikes_7
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 193
+        width: 124
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e79ea3c8e31447f7bc316edb6d2a335
+      internalID: 70968108222225461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: box_boss_spikes_8
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 193
+        width: 124
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beaad822c5550407992e36798c9caea6
+      internalID: 5688348339414763951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: box_boss_spikes_9
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 193
+        width: 124
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfed61f40957c44a9ac326e2eefa0a9e
+      internalID: 2625923221500420824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: box_boss_spikes_10
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 193
+        width: 124
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20111f24e5913493882613015a9aeec0
+      internalID: 19444553435253173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: box_boss_spikes_11
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 193
+        width: 124
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 595285da8451a491ba8f987496330bad
+      internalID: 7958543925860065113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: box_boss_spikes_12
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 23
+        width: 124
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b92980c20b4047beba4f7fa4cbe218f
+      internalID: 4818032561557908865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: box_boss_spikes_13
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 23
+        width: 124
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a21aedd7128f04ed585d072feae7f3d1
+      internalID: 8249042729742682298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: box_boss_spikes_14
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 23
+        width: 124
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57f008283f17043498aa13482f104c5f
+      internalID: -7898817499319607399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: box_boss_spikes_15
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 23
+        width: 124
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20d46e8483c7146d4883a8d5271d8c2f
+      internalID: -7290686348568468620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: box_boss_spikes_16
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 23
+        width: 124
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56aafccee122045898b928a4dbf9fabe
+      internalID: -8470207031451242320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: box_boss_spikes_17
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 27
+        width: 158
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af55ecb498e0a41babf054797aab0a87
+      internalID: 4765176780567765253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

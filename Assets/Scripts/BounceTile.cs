@@ -21,7 +21,6 @@ public class BounceTile : MonoBehaviour
     {
         bool playerIsBouncing = triggerAnimation.IsTouchingLayers(LayerMask.GetMask("Player"));
 
-        Debug.Log(playerIsBouncing);
         bounceAnimator.SetBool("Bouncing", (playerIsBouncing));
 
         if (playerIsBouncing)

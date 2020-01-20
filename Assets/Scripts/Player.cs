@@ -14,7 +14,8 @@ public class Player : MonoBehaviour {
     [SerializeField] float invulnerabilityTime = 2f;
     [SerializeField] Transform firePoint;
     [SerializeField] GameObject fireShotPrefab;
-    [SerializeField] Vector2 deathKick = new Vector2(25f, 25f);
+    [SerializeField] Vector2 deathKick = new Vector2(25f, 0f);
+    [SerializeField] Vector2 hitBossBump = new Vector2(15f, 15f);
     [SerializeField] AudioClip playerDeathSFX;
     [SerializeField] float soundVol = 0.2f;
 
@@ -165,6 +166,18 @@ public class Player : MonoBehaviour {
             else if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Slippery Enemy")))
             {
                 PlayerInjured();
+            }
+
+            // Box Boss Damage
+            else if (myBodyCollider.IsTouching(FindObjectOfType<BoxBoss>().receiveDamageCollider))
+            {
+                FindObjectOfType<BoxBoss>().TakeDamage(5);
+                Debug.Log("Cause Damage 5");
+            }
+            else if (myBodyCollider.IsTouching(FindObjectOfType<BoxBoss>().causeDamageCollider))
+            {
+                PlayerInjured();
+                Debug.Log("Take Damage");
             }
         }
         else if (vulnerability == false)

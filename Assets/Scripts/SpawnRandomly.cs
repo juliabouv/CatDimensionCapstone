@@ -16,7 +16,6 @@ public class SpawnRandomly : MonoBehaviour
         {
             InvokeRepeating("SpawnObject", spawnTime, spawnDelay);
             Destroy(gameObject, 15);
-            Destroy(toSpawn, 15);
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
         }
     }
