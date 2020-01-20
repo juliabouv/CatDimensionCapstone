@@ -19,24 +19,25 @@ public class DogBoss : MonoBehaviour
     
     void Update()
     {
-        if (myRigidBody.IsTouchingLayers(LayerMask.GetMask("Dog Bait")))
-        {
-            Vector2 dogVelocity = new Vector2(0f, 0f);
-            myRigidBody.velocity = dogVelocity;
-            myAnimator.SetTrigger("Dog Peeing");
-        }
-        else
-        {
-            Vector3 direction = player.position - transform.position;
-            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-            myRigidBody.rotation = angle;
+        
+        Vector3 direction = player.position - transform.position;
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        myRigidBody.rotation = angle;
 
-            direction.Normalize();
-            movement = direction;
-        }
+        direction.Normalize();
+        movement = direction;
+        
     }
 
     private void FixedUpdate()
+    {
+
+        moveEnemy(movement);
+        
+        
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (myRigidBody.IsTouchingLayers(LayerMask.GetMask("Dog Bait")))
         {
@@ -44,11 +45,6 @@ public class DogBoss : MonoBehaviour
             myRigidBody.velocity = dogVelocity;
             myAnimator.SetTrigger("Dog Peeing");
         }
-        else
-        {
-            moveEnemy(movement);
-        }
-        
     }
 
     void moveEnemy(Vector2 direction)

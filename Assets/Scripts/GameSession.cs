@@ -81,6 +81,7 @@ public class GameSession : MonoBehaviour {
         int newLives = (score - addedLives * 1000) / 1000;
         if (newLives == 1)
         {
+            FindObjectOfType<Player>().NewLifeSound();
             playerLives += newLives;
             addedLives++;
             livesText.text = playerLives.ToString();

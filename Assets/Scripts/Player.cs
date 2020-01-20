@@ -17,11 +17,13 @@ public class Player : MonoBehaviour {
     [SerializeField] Vector2 deathKick = new Vector2(25f, 0f);
     [SerializeField] Vector2 hitBossBump = new Vector2(15f, 15f);
     [SerializeField] AudioClip playerDeathSFX;
+    [SerializeField] AudioClip newLifeSFX;
     [SerializeField] float soundVol = 0.2f;
 
     [SerializeField] float fJumpPressedRememberTime = 0.2f;
     [SerializeField] float fGroundedRememberTime = 0.15f;
     [SerializeField] float fHorizontalDamping = 0.22f;
+    public float delayInShoot = 1f;
     float fJumpPressedRemember = 0;
     float fGroundedRemember = 0;
 
@@ -31,6 +33,7 @@ public class Player : MonoBehaviour {
     private bool facingRight = true;
     public bool vulnerability = true;
     public bool firePowerup = false;
+    public bool canShoot = true;
 
 
     // Cached component references
@@ -106,9 +109,21 @@ public class Player : MonoBehaviour {
         {
             if(CrossPlatformInputManager.GetButtonDown("Fire1"))
             {
-                Instantiate(fireShotPrefab, firePoint.position, firePoint.rotation);
+                if (canShoot)
+                {
+                    Instantiate(fireShotPrefab, firePoint.position, firePoint.rotation);
+
+                    canShoot = false;
+                    StartCoroutine(ShootDelay());
+                }
             }
         }
+    }
+
+    IEnumerator ShootDelay()
+    {
+        yield return new WaitForSeconds(delayInShoot);
+        canShoot = true;
     }
 
     private void Jump()
@@ -269,5 +284,11 @@ public class Player : MonoBehaviour {
     public void ExitLevel()
     {
         myAnimator.SetTrigger("Exiting Level");
+    }
+
+    public void NewLifeSound()
+    {
+        GameObject audioListener = GameObject.FindWithTag("AudioListener");
+        AudioSource.PlayClipAtPoint(newLifeSFX, audioListener.transform.position, soundVol);
     }
 }

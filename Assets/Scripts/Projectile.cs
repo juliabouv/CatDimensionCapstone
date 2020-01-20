@@ -8,11 +8,13 @@ public class Projectile : MonoBehaviour
 
     private Transform player;
     private Vector2 target;
+    private CircleCollider2D deathCircle;
 
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        target = new Vector2(player.position.x, player.position.y); 
+        target = new Vector2(player.position.x, player.position.y);
+        deathCircle = GetComponent<CircleCollider2D>();
     }
 
     private void Update()
@@ -27,9 +29,10 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Player"))
+        if(deathCircle.IsTouching(FindObjectOfType<Player>().myBodyCollider))
         {
             FindObjectOfType<Player>().PlayerInjured();
+            Debug.Log("Injure Player");
             DestroyProjectile();
         }
     }

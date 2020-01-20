@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1754676362}
-  m_Layer: 10
+  m_Layer: 18
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,7 +45,6 @@ GameObject:
   - component: {fileID: 5614685475276760552}
   - component: {fileID: 5614685475276760553}
   - component: {fileID: 5614685475276760558}
-  - component: {fileID: 1319054478}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -168,7 +167,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.020390987, y: -0.09433365}
@@ -221,27 +220,15 @@ MonoBehaviour:
   fireShotPrefab: {fileID: 7632765628253424555, guid: e595effc734464937ad929b9ddaf8f47,
     type: 3}
   deathKick: {x: 5, y: 5}
+  hitBossBump: {x: 15, y: 15}
   playerDeathSFX: {fileID: 8300000, guid: b513b5d26c37c48549e4e5e1c438f290, type: 3}
+  newLifeSFX: {fileID: 8300000, guid: 66d761ef8fb0640668df37bdebaa702e, type: 3}
   soundVol: 0.25
   fJumpPressedRememberTime: 0.2
   fGroundedRememberTime: 0.15
   fHorizontalDamping: 0.22
+  delayInShoot: 0.5
   vulnerability: 1
   firePowerup: 0
+  canShoot: 1
   myBodyCollider: {fileID: 0}
---- !u!70 &1319054478
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5614685475276760559}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.3000641, y: 0.18662262}
-  m_Size: {x: 0.33737183, y: 0.38861084}
-  m_Direction: 0

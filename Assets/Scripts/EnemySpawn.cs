@@ -14,7 +14,7 @@ public class EnemySpawn : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             InvokeRepeating("EnemySpawner", 1f, repeatRate);
-            Destroy(gameObject, 20);
+            Destroy(gameObject, 40);
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
         }
     }
