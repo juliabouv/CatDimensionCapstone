@@ -17,7 +17,7 @@ public class FireShot : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Colliding with" + collision);
+        Debug.Log("Colliding with" + collision.gameObject.name);
         if (shot.IsTouchingLayers(LayerMask.GetMask("Enemy")))
         {
             FindObjectOfType<EnemyMovement>().killEnemy(collision.gameObject);

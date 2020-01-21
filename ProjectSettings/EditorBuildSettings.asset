@@ -45,6 +45,9 @@ EditorBuildSettings:
     path: Assets/Levels/Level 8 (Why'd it have to be bats).unity
     guid: 19fa5b8731a584cf1b1e59cd1bd517ac
   - enabled: 1
+    path: Assets/Levels/Level 12 (Medieval FunTime World).unity
+    guid: a44b32a5882b64306af8af8ce16f2a39
+  - enabled: 1
     path: Assets/Levels/Level 10 (The Crazy Cat Lady).unity
     guid: d82cc5f5fd4944cfa811d5ad0fafaaaa
   - enabled: 1

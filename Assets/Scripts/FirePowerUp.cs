@@ -28,15 +28,22 @@ public class FirePowerUp : MonoBehaviour
         GameObject audioListener = GameObject.FindWithTag("AudioListener");
         AudioSource audioSource = audioListener.GetComponent<AudioSource>();
         audioSource.Pause();
-        AudioSource.PlayClipAtPoint(powerupPickupSFX, audioListener.transform.position, soundVol);
-
+        if (!audioSource.isPlaying)
+        {
+            AudioSource.PlayClipAtPoint(powerupPickupSFX, audioListener.transform.position, soundVol);
+        }
+        
         GetComponent<SpriteRenderer>().enabled = false;
         GetComponent<Animator>().enabled = false;
         GetComponent<Collider2D>().enabled = false;
 
         yield return new WaitForSeconds(duration);
 
-        audioSource.Play();
+        if (!audioSource.isPlaying)
+        {
+            audioSource.Play();
+        }
+        
         FindObjectOfType<Player>().firePowerup = false;
 
         Destroy(gameObject);
