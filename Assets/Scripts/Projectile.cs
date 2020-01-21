@@ -31,9 +31,12 @@ public class Projectile : MonoBehaviour
     {
         if(deathCircle.IsTouching(FindObjectOfType<Player>().myBodyCollider))
         {
-            FindObjectOfType<Player>().PlayerInjured();
-            Debug.Log("Injure Player");
-            DestroyProjectile();
+            if (FindObjectOfType<Player>().vulnerability)
+            {
+                FindObjectOfType<Player>().PlayerInjured();
+                Debug.Log("Injure Player");
+                DestroyProjectile();
+            }
         }
     }
 

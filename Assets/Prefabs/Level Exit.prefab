@@ -123,4 +123,4 @@ MonoBehaviour:
   LevelLoadDelay: 3.5
   LevelExitSlowMoFactor: 0.5
   portalEnterSFX: {fileID: 8300000, guid: e53a97a38c91e45dc91f214d163853eb, type: 3}
-  soundVol: 0.18
+  soundVol: 0.1

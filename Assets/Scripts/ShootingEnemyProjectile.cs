@@ -37,9 +37,12 @@ public class ShootingEnemyProjectile : MonoBehaviour
 
         if (deathBox.IsTouching(FindObjectOfType<Player>().myBodyCollider))
         {
-            FindObjectOfType<Player>().PlayerInjured();
-            Debug.Log("Injure Player");
-            DestroyProjectile();
+            if (FindObjectOfType<Player>().vulnerability)
+            {
+                FindObjectOfType<Player>().PlayerInjured();
+                Debug.Log("Injure Player");
+                DestroyProjectile();
+            }
         }
         else
         {
