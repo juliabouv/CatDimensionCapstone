@@ -57,6 +57,9 @@ TagManager:
   - name: Decor
     uniqueID: 3671753423
     locked: 0
+  - name: Hazards
+    uniqueID: 2908145675
+    locked: 0
   - name: Foreground
     uniqueID: 1366280379
     locked: 0
@@ -68,9 +71,6 @@ TagManager:
     locked: 0
   - name: Interactables
     uniqueID: 2137286109
-    locked: 0
-  - name: Hazards
-    uniqueID: 2908145675
     locked: 0
   - name: Level Exit
     uniqueID: 1953392681

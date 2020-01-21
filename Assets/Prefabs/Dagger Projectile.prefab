@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 372860794509115805}
   - component: {fileID: 1372215112309790875}
   - component: {fileID: 3455495762637738146}
-  m_Layer: 18
+  m_Layer: 11
   m_Name: Dagger Projectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,7 +70,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1366280379
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 3930993651605609962, guid: a18848f54455a4b4ab25dc03287a46a9,
     type: 3}
@@ -123,7 +123,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  target: {x: 0, y: 5}
 --- !u!61 &3455495762637738146
 BoxCollider2D:
   m_ObjectHideFlags: 0
