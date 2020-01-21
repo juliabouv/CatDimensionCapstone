@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1
-  enemyDeathSFX: {fileID: 8300000, guid: aae08cac5b63c4d53aa9beeba4f75801, type: 3}
+  enemyDeathSFX: {fileID: 8300000, guid: 0126421f9f6c045cd88429cfb6016555, type: 3}
   soundVol: 0.25
 --- !u!61 &2053573332458501399
 BoxCollider2D:

@@ -3574,6 +3574,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5753238321065022470, guid: 37d68611cedb64f3f995c384f2784e10,
+        type: 3}
+      propertyPath: enemySoundSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: cd38d430a709e4f038553c79e30c66d1, type: 3}
     - target: {fileID: 5753238321065022471, guid: 37d68611cedb64f3f995c384f2784e10,
         type: 3}
       propertyPath: m_Name
@@ -6725,6 +6730,11 @@ PrefabInstance:
       propertyPath: repeatRate
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5753238321065022470, guid: 37d68611cedb64f3f995c384f2784e10,
+        type: 3}
+      propertyPath: enemySoundSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: cd38d430a709e4f038553c79e30c66d1, type: 3}
     - target: {fileID: 5753238321065022471, guid: 37d68611cedb64f3f995c384f2784e10,
         type: 3}
       propertyPath: m_Name

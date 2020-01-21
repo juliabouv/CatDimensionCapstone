@@ -17,7 +17,9 @@ public class Menu : MonoBehaviour {
     public void LoadMainMenu()
     {
         FindObjectOfType<GameSession>().ResetGameSession();
-        
+        FindObjectOfType<PauseMenu>().gameIsPaused = false;
+
+
         SceneManager.LoadScene(0);
     }
 }

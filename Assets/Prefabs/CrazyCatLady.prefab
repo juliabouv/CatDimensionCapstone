@@ -167,7 +167,8 @@ MonoBehaviour:
   retreatDistance: 4
   loadDelay: 2
   healthBar: {fileID: 0}
-  firePoint: {fileID: 0}
+  enemyDeathSFX: {fileID: 8300000, guid: ecd8f26a205ab4fea80f116cf4eb9354, type: 3}
+  soundVol: 0.25
   startTimeBetweenShots: 2
   projectile: {fileID: 4018689421669422286, guid: 75fb9917597ff43d1ae27255c529cb48,
     type: 3}

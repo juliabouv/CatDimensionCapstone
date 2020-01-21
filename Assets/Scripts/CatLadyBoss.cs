@@ -13,6 +13,8 @@ public class CatLadyBoss : MonoBehaviour
     public float retreatDistance;
     public float loadDelay = 2f;
     public Slider healthBar;
+    public AudioClip enemyDeathSFX;
+    public float soundVol = 0.25f;
 
     private float timeBetweenShots;
     public float startTimeBetweenShots = 2f;
@@ -85,6 +87,8 @@ public class CatLadyBoss : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        GameObject audioListener = GameObject.FindWithTag("AudioListener");
+        AudioSource.PlayClipAtPoint(enemyDeathSFX, audioListener.transform.position, soundVol);
         health -= damage;
 
         if(health <= 0)

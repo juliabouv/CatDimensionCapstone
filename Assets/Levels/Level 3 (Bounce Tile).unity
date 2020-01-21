@@ -1172,7 +1172,7 @@ Tilemap:
   m_GameObject: {fileID: 1295763140}
   m_Enabled: 1
   m_Tiles:
-  - first: {x: -9, y: -12, z: 0}
+  - first: {x: -11, y: -12, z: 0}
     second:
       m_TileIndex: 3
       m_TileSpriteIndex: 3

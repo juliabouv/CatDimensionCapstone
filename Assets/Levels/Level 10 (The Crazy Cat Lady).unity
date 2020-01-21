@@ -27447,6 +27447,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 616319633}
+    - target: {fileID: 9150054742091164297, guid: 169dc3ae2f10d406cb87b433d17deca9,
+        type: 3}
+      propertyPath: soundVol
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 9150054742091164301, guid: 169dc3ae2f10d406cb87b433d17deca9,
         type: 3}
       propertyPath: m_LocalPosition.x
