@@ -22,12 +22,6 @@ public class BounceTile : MonoBehaviour
         bool playerIsBouncing = triggerAnimation.IsTouchingLayers(LayerMask.GetMask("Player"));
 
         bounceAnimator.SetBool("Bouncing", (playerIsBouncing));
-
-        if (playerIsBouncing)
-        {
-            GameObject audioListener = GameObject.FindWithTag("AudioListener");
-            AudioSource.PlayClipAtPoint(bounceSFX, audioListener.transform.position, soundVol);
-        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -36,12 +30,14 @@ public class BounceTile : MonoBehaviour
 
         Debug.Log(playerIsBouncing);
         bounceAnimator.SetBool("Bouncing", (playerIsBouncing));
+    }
 
-        if (playerIsBouncing)
-        {
-            GameObject audioListener = GameObject.FindWithTag("AudioListener");
-            AudioSource.PlayClipAtPoint(bounceSFX, audioListener.transform.position, soundVol);
-        }
-        
+    public void BounceSound()
+    {
+        GameObject audioListener = GameObject.FindWithTag("AudioListener");
+        AudioSource.PlayClipAtPoint(bounceSFX, audioListener.transform.position, soundVol);
     }
 }
+
+
+

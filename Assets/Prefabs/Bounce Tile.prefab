@@ -143,7 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21b062ecfb8de4d97842ffc62cbee921, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bounceSFX: {fileID: 0}
+  bounceSFX: {fileID: 8300000, guid: 1a78a2196ca714e74a4c8dbb082d76f4, type: 3}
   soundVol: 0.25
 --- !u!60 &546090700
 PolygonCollider2D:

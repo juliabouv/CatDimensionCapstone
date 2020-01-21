@@ -155,6 +155,7 @@ public class Player : MonoBehaviour {
         {
             Vector2 bounceVelocityToAdd = new Vector2(0f, bounceTileSpeed);
             myRigidBody.velocity += bounceVelocityToAdd;
+            FindObjectOfType<BounceTile>().BounceSound();
         }
     }
 

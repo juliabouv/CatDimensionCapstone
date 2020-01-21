@@ -8,6 +8,8 @@ public class ShootingEnemy : MonoBehaviour
     public float startTimeBetweenShots = 3f;
     public GameObject projectile;
     Animator myAnimator;
+    public AudioClip enemyDeathSFX;
+    public float soundVol = 0.25f;
 
     public Transform player;
 
@@ -36,6 +38,8 @@ public class ShootingEnemy : MonoBehaviour
 
     public void killEnemy(GameObject enemy)
     {
+        GameObject audioListener = GameObject.FindWithTag("AudioListener");
+        AudioSource.PlayClipAtPoint(enemyDeathSFX, audioListener.transform.position, soundVol);
         Destroy(enemy);
     }
 }

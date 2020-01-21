@@ -10,6 +10,8 @@ public class BoxBoss : MonoBehaviour
     public float timer;
     public float loadDelay = 2f;
     public Slider healthBar;
+    public AudioClip enemyDeathSFX;
+    public float soundVol = 0.25f;
 
     Animator animator;
     public BoxCollider2D receiveDamageCollider;
@@ -30,6 +32,8 @@ public class BoxBoss : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        GameObject audioListener = GameObject.FindWithTag("AudioListener");
+        AudioSource.PlayClipAtPoint(enemyDeathSFX, audioListener.transform.position, soundVol);
         health -= damage;
 
         if (health <= 0)

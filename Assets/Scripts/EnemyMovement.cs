@@ -7,8 +7,11 @@ public class EnemyMovement : MonoBehaviour {
     [SerializeField] float moveSpeed = 1f;
     Rigidbody2D myRigidBody;
 
-	// Use this for initialization
-	void Start () {
+    public AudioClip enemyDeathSFX;
+    public float soundVol = 0.25f;
+
+    // Use this for initialization
+    void Start () {
         myRigidBody = GetComponent<Rigidbody2D>();
 	}
 	
@@ -27,7 +30,9 @@ public class EnemyMovement : MonoBehaviour {
 
     public void killEnemy(GameObject enemy)
 	{
-		Destroy(enemy);
+        GameObject audioListener = GameObject.FindWithTag("AudioListener");
+        AudioSource.PlayClipAtPoint(enemyDeathSFX, audioListener.transform.position, soundVol);
+        Destroy(enemy);
         FindObjectOfType<GameSession>().AddToScore(50);
     }
 
