@@ -22,4 +22,10 @@ public class Menu : MonoBehaviour {
 
         SceneManager.LoadScene(0);
     }
+
+    public void QuitGame()
+    {
+        Debug.Log("Quitting Game...");
+        Application.Quit();
+    }
 }
