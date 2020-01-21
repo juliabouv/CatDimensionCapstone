@@ -21,12 +21,14 @@ public class LevelExit : MonoBehaviour {
         GameObject audioListener = GameObject.FindWithTag("AudioListener");
         AudioSource.PlayClipAtPoint(portalEnterSFX, audioListener.transform.position, soundVol);
 
+        FindObjectOfType<Player>().vulnerability = false;
         Time.timeScale = LevelExitSlowMoFactor;
         FindObjectOfType<Player>().ExitLevel();
         Destroy(FindObjectOfType<ScenePersist>());
         yield return new WaitForSecondsRealtime(LevelLoadDelay);
 
         Time.timeScale = 1f;
+        FindObjectOfType<Player>().vulnerability = true;
         var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex + 1);
     }

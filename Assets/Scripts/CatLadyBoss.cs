@@ -101,6 +101,7 @@ public class CatLadyBoss : MonoBehaviour
 
     void Die()
     {
+        FindObjectOfType<GameSession>().AddToScore(400);
         StartCoroutine(SlowLoad());
     }
 

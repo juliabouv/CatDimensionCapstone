@@ -46,6 +46,7 @@ public class BoxBoss : MonoBehaviour
 
     void Die()
     {
+        FindObjectOfType<GameSession>().AddToScore(200);
         StartCoroutine(SlowLoad());
     }
 
@@ -55,6 +56,7 @@ public class BoxBoss : MonoBehaviour
         yield return new WaitForSecondsRealtime(loadDelay);
         health = 100;
 
+        Destroy(FindObjectOfType<ScenePersist>());
         var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex + 1);
     }

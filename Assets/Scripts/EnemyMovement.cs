@@ -28,7 +28,8 @@ public class EnemyMovement : MonoBehaviour {
     public void killEnemy(GameObject enemy)
 	{
 		Destroy(enemy);
-	}
+        FindObjectOfType<GameSession>().AddToScore(50);
+    }
 
     bool IsFacingRight()
     {
