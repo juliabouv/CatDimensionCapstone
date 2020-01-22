@@ -2263,7 +2263,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1386821621
-  m_SortingLayer: 8
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0.007936537, y: 0.007936537, z: 0}
@@ -5603,6 +5603,42 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
+  - first: {x: -61, y: -8, z: 0}
+    second:
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: -60, y: -8, z: 0}
+    second:
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: -59, y: -8, z: 0}
+    second:
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: -58, y: -8, z: 0}
+    second:
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
   - first: {x: 115, y: -8, z: 0}
     second:
       m_TileIndex: 3
@@ -5639,6 +5675,24 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
+  - first: {x: 113, y: -4, z: 0}
+    second:
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: 114, y: -4, z: 0}
+    second:
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
   - first: {x: 115, y: -4, z: 0}
     second:
       m_TileIndex: 3
@@ -5656,7 +5710,7 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 177
     m_Data: {fileID: 11400000, guid: 35f184227f58648549c4f39b0e2fc997, type: 2}
-  - m_RefCount: 197
+  - m_RefCount: 203
     m_Data: {fileID: 11400000, guid: f4d9a941818494571b60b37b6bf7c3e4, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 0
@@ -5666,11 +5720,11 @@ Tilemap:
   - m_RefCount: 177
     m_Data: {fileID: -4586103026359222846, guid: 206ef336595b8457e8912abdaf5959ea,
       type: 3}
-  - m_RefCount: 197
+  - m_RefCount: 203
     m_Data: {fileID: 8384454040912000664, guid: 206ef336595b8457e8912abdaf5959ea,
       type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 374
+  - m_RefCount: 380
     m_Data:
       e00: 1
       e01: 0
@@ -5689,7 +5743,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 374
+  - m_RefCount: 380
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   - m_RefCount: 0
     m_Data: {r: 0.95694584, g: 0.55036217, b: 0.6489953, a: 1}
@@ -6173,7 +6227,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1386821621
-  m_SortingLayer: 8
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -10161,6 +10215,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1212723974224451134, guid: 4b2b2ae2ea199447296f8037fbb6ca52,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212723974224451134, guid: 4b2b2ae2ea199447296f8037fbb6ca52,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212723974224451134, guid: 4b2b2ae2ea199447296f8037fbb6ca52,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212723974224451134, guid: 4b2b2ae2ea199447296f8037fbb6ca52,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5915787366068635303, guid: 4b2b2ae2ea199447296f8037fbb6ca52,
         type: 3}
       propertyPath: m_textInfo.characterCount

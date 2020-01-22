@@ -11,17 +11,18 @@ public class BoxBoss : MonoBehaviour
     public float loadDelay = 2f;
     public Slider healthBar;
     public AudioClip enemyDeathSFX;
+    public AudioClip deathSFX;
     public float soundVol = 0.25f;
 
     Animator animator;
     public BoxCollider2D receiveDamageCollider;
-    public PolygonCollider2D causeDamageCollider;
+    public CapsuleCollider2D causeDamageCollider;
 
     void Start()
     {
         animator = GetComponent<Animator>();
         receiveDamageCollider = GetComponent<BoxCollider2D>();
-        causeDamageCollider = GetComponent<PolygonCollider2D>();
+        causeDamageCollider = GetComponent<CapsuleCollider2D>();
     }
 
 
@@ -50,17 +51,21 @@ public class BoxBoss : MonoBehaviour
 
     void Die()
     {
+        GameObject audioListener = GameObject.FindWithTag("AudioListener");
+        AudioSource.PlayClipAtPoint(deathSFX, audioListener.transform.position, soundVol);
         FindObjectOfType<GameSession>().AddToScore(200);
         StartCoroutine(SlowLoad());
     }
 
     IEnumerator SlowLoad()
     {
+        FindObjectOfType<Player>().vulnerability = false;
         animator.SetTrigger("Death");
         yield return new WaitForSecondsRealtime(loadDelay);
         health = 100;
 
         Destroy(FindObjectOfType<ScenePersist>());
+        FindObjectOfType<Player>().vulnerability = true;
         var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex + 1);
     }

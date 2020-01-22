@@ -14,6 +14,7 @@ public class CatLadyBoss : MonoBehaviour
     public float loadDelay = 2f;
     public Slider healthBar;
     public AudioClip enemyDeathSFX;
+    public AudioClip deathSFX;
     public float soundVol = 0.25f;
 
     private float timeBetweenShots;
@@ -105,15 +106,20 @@ public class CatLadyBoss : MonoBehaviour
 
     void Die()
     {
+        GameObject audioListener = GameObject.FindWithTag("AudioListener");
+        AudioSource.PlayClipAtPoint(deathSFX, audioListener.transform.position, soundVol);
         FindObjectOfType<GameSession>().AddToScore(400);
         StartCoroutine(SlowLoad());
     }
 
     IEnumerator SlowLoad()
     {
+        FindObjectOfType<Player>().vulnerability = false;
         startTimeBetweenShots = 100f;
         myAnimator.SetTrigger("Death");
         yield return new WaitForSecondsRealtime(loadDelay);
+
+        FindObjectOfType<Player>().vulnerability = true;
         health = 100;
         startTimeBetweenShots = 2f;
         var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;

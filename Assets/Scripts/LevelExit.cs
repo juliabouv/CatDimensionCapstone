@@ -11,9 +11,12 @@ public class LevelExit : MonoBehaviour {
     [SerializeField] AudioClip portalEnterSFX;
     [SerializeField] float soundVol = 0.25f;
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        StartCoroutine(LoadNextLevel());
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            StartCoroutine(LoadNextLevel());
+        }
     }
 
     IEnumerator LoadNextLevel()

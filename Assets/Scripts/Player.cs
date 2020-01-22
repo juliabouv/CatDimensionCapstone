@@ -130,22 +130,8 @@ public class Player : MonoBehaviour {
     {
         bool grounded = myFeet.IsTouchingLayers(LayerMask.GetMask("Ground"));
 
-        fGroundedRemember -= Time.deltaTime;
-        if (grounded)
+        if (CrossPlatformInputManager.GetButtonDown("Jump") && grounded)
         {
-            fGroundedRemember = fGroundedRememberTime;
-        }
-
-        fJumpPressedRemember -= Time.deltaTime;
-        if (CrossPlatformInputManager.GetButtonDown("Jump"))
-        {
-            fJumpPressedRemember = fJumpPressedRememberTime;
-        }
-
-        if ((fJumpPressedRemember > 0) && (fGroundedRemember > 0))
-        {
-            fJumpPressedRemember = 0;
-            fGroundedRemember = 0;
             Vector2 jumpVelocityToAdd = new Vector2(0f, jumpSpeed);
             myRigidBody.velocity += jumpVelocityToAdd;
         }
@@ -185,20 +171,25 @@ public class Player : MonoBehaviour {
             }
 
             // Box Boss Damage
-            else if (myBodyCollider.IsTouching(FindObjectOfType<BoxBoss>().receiveDamageCollider))
+            if (GameObject.Find("BoxBoss") != null)
             {
-                FindObjectOfType<BoxBoss>().TakeDamage(5);
-                Debug.Log("Cause Damage 5");
+                if (myBodyCollider.IsTouching(FindObjectOfType<BoxBoss>().receiveDamageCollider))
+                {
+                    FindObjectOfType<BoxBoss>().TakeDamage(5);
+                    Debug.Log("Cause Damage 5");
+                }
+                else if (myBodyCollider.IsTouching(FindObjectOfType<BoxBoss>().causeDamageCollider))
+                {
+                    PlayerInjured();
+                    Debug.Log("Take Damage");
+                }
             }
-            else if (myBodyCollider.IsTouching(FindObjectOfType<BoxBoss>().causeDamageCollider))
-            {
-                PlayerInjured();
-                Debug.Log("Take Damage");
-            }
+            
+            
         }
         else if (vulnerability == false)
         {
-            if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy")))
+            if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy")) && collision.gameObject.CompareTag("Enemy"))
             {
                 FindObjectOfType<EnemyMovement>().killEnemy(collision.gameObject);
             }

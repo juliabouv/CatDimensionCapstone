@@ -132,8 +132,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61f89bd6a35014196af07f31d3ecd084, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minTime: 0.5
-  maxTime: 2
+  minTime: 1.5
+  maxTime: 3
 --- !u!114 &-1056193829585020739
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -146,8 +146,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d99537d6151b40b9b0aa79db0f8cac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minTime: 0.5
-  maxTime: 2
+  minTime: 1.5
+  maxTime: 3
 --- !u!91 &9100000
 AnimatorController:
   m_ObjectHideFlags: 0

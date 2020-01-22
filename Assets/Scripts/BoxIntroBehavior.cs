@@ -9,16 +9,7 @@ public class BoxIntroBehavior : StateMachineBehaviour
 
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        rand = Random.Range(0, 2);
-
-        if (rand == 0)
-        {
-            animator.SetTrigger("Jump");
-        }
-        else
-        {
-            animator.SetTrigger("Flip");
-        }
+         animator.SetTrigger("Jump");
     }
 
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
