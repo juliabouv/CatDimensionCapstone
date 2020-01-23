@@ -112,36 +112,25 @@ A 2D Platformer Game built in Unity and C# that follows a cat's adventure throug
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+* Download or clone the repository to your local machine.
+* Set up Unity and Visual Studio on your computer.
+* Add project to your Unity Hub.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+* [Download Unity version 2019.2.17f1]: https://unity3d.com/get-unity/download
+* Select **WebGL Build Support** under Platforms when adding Unity Version
+* [Download Latest Version of Visual Studio using Unity Hub]: https://unity3d.com/get-unity/download
+* Activate a **Unity License**
 
-```
-Give examples
-```
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
+* In Unity Hub under projects, select ADD
+* Select Project to open in Unity
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+[Deployed to Itch.io for download]: https://juliabouv.itch.io/escaping-the-cat-dimension
 
 ## Built With
 
@@ -149,15 +138,44 @@ Add additional notes about how to deploy this on a live system
 
 ## Authors
 
-* **Julia Bouvier** - [juliabouv](https://github.com/juliabouv)
-
-## License
-
-This project is licensed under the Unity Personal License
+**Julia Bouvier** - [juliabouv](https://github.com/juliabouv)
 
 ## Open Source Art Attribution:
 
+Foreground
+* [All foreground tiles from Kenney]: https://kenney.nl/
+
+Sprites
+* [Rat/Cat/Dog by Tuomo Untinen]: https://opengameart.org/content/lpc-rat-cat-and-dog
+* [dog running by benalene]: http://opengameart.org/content/dog-running
+* [dog frames added by qubodup license CCBY3 <http://creativecommons.org/licenses/by/3.0/>]: http://opengameart.org/users/qubodup
+* [Medieval skeleton by Johannes Sjölund]: https://opengameart.org/content/lpc-medieval-fantasy-character-sprites
+* [lasers]: https://opengameart.org/content/lasers-and-beams
+
+
+Music
+* [Caketown]: http://www.matthewpablo.com/contact
+* [Battle RPG Theme by Cleyton Kauffman]: https://soundcloud.com/cleytonkauffman
+* [Italo Unlimited composed & produced by Ove Melaa]:Omsoftware@hotmail.com
+* [Power of Thy YES composed & produced by Ove Melaa]:Omsoftware@hotmail.com
+* [Super Ninja Assasin composed & produced by Ove Melaa]:Omsoftware@hotmail.com
+* [High Stakes,Low Chances composed & produced by Ove Melaa]:Omsoftware@hotmail.com
+* [Medieval by Miguel Herrero]:https://www.jamendo.com/search?language=de&q=miguel.herrero
+* [The Treasure by Snabisch]: http://youtu.be/8ojj8mBQVew
+* [Winds of Stories]: https://opengameart.org/content/winds-of-stories
+
+
+Sound Effects
+* https://audiosoundclips.com/
+* https://freesound.org/
+* http://soundbible.com/
+
+
+Backgrounds
+* [Vortex]: https://opengameart.org/content/vortex-background
+* [Full Moon]: https://opengameart.org/content/background-night
 * https://favpng.com/
 * http://clipart-library.com/
 * https://pngtree.com/
 * https://imgbin.com/
+* http://www.seekgif.com/
