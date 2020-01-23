@@ -118,9 +118,9 @@ A 2D Platformer Game built in Unity and C# that follows a cat's adventure throug
 
 ### Prerequisites
 
-* [Download Unity version 2019.2.17f1]: https://unity3d.com/get-unity/download
+* [Download Unity version 2019.2.17f1](https://unity3d.com/get-unity/download)
 * Select **WebGL Build Support** under Platforms when adding Unity Version
-* [Download Latest Version of Visual Studio using Unity Hub]: https://unity3d.com/get-unity/download
+* [Download Latest Version of Visual Studio using Unity Hub](https://unity3d.com/get-unity/download)
 * Activate a **Unity License**
 
 ### Installing
@@ -130,7 +130,7 @@ A 2D Platformer Game built in Unity and C# that follows a cat's adventure throug
 
 ## Deployment
 
-[Deployed to Itch.io for download]: https://juliabouv.itch.io/escaping-the-cat-dimension
+[Deployed to Itch.io for download](https://juliabouv.itch.io/escaping-the-cat-dimension)
 
 ## Built With
 
@@ -143,26 +143,26 @@ A 2D Platformer Game built in Unity and C# that follows a cat's adventure throug
 ## Open Source Art Attribution:
 
 Foreground
-* [All foreground tiles from Kenney]: https://kenney.nl/
+* [All foreground tiles from Kenney](https://kenney.nl/)
 
 Sprites
-* [Rat/Cat/Dog by Tuomo Untinen]: https://opengameart.org/content/lpc-rat-cat-and-dog
-* [dog running by benalene]: http://opengameart.org/content/dog-running
-* [dog frames added by qubodup license CCBY3 <http://creativecommons.org/licenses/by/3.0/>]: http://opengameart.org/users/qubodup
-* [Medieval skeleton by Johannes Sjölund]: https://opengameart.org/content/lpc-medieval-fantasy-character-sprites
-* [lasers]: https://opengameart.org/content/lasers-and-beams
+* [Rat/Cat/Dog by Tuomo Untinen](https://opengameart.org/content/lpc-rat-cat-and-dog)
+* [dog running by benalene](http://opengameart.org/content/dog-running)
+* [dog frames added by qubodup license CCBY3 <http://creativecommons.org/licenses/by/3.0/>](http://opengameart.org/users/qubodup)
+* [Medieval skeleton by Johannes Sjölund](https://opengameart.org/content/lpc-medieval-fantasy-character-sprites)
+* [lasers](https://opengameart.org/content/lasers-and-beams)
 
 
 Music
-* [Caketown]: http://www.matthewpablo.com/contact
-* [Battle RPG Theme by Cleyton Kauffman]: https://soundcloud.com/cleytonkauffman
-* [Italo Unlimited composed & produced by Ove Melaa]:Omsoftware@hotmail.com
-* [Power of Thy YES composed & produced by Ove Melaa]:Omsoftware@hotmail.com
-* [Super Ninja Assasin composed & produced by Ove Melaa]:Omsoftware@hotmail.com
-* [High Stakes,Low Chances composed & produced by Ove Melaa]:Omsoftware@hotmail.com
-* [Medieval by Miguel Herrero]:https://www.jamendo.com/search?language=de&q=miguel.herrero
-* [The Treasure by Snabisch]: http://youtu.be/8ojj8mBQVew
-* [Winds of Stories]: https://opengameart.org/content/winds-of-stories
+* [Caketown](http://www.matthewpablo.com/contact)
+* [Battle RPG Theme by Cleyton Kauffman](https://soundcloud.com/cleytonkauffman)
+* [Italo Unlimited composed & produced by Ove Melaa](Omsoftware@hotmail.com)
+* [Power of Thy YES composed & produced by Ove Melaa](Omsoftware@hotmail.com)
+* [Super Ninja Assasin composed & produced by Ove Melaa](Omsoftware@hotmail.com)
+* [High Stakes,Low Chances composed & produced by Ove Melaa](Omsoftware@hotmail.com)
+* [Medieval by Miguel Herrero](https://www.jamendo.com/search?language=de&q=miguel.herrero)
+* [The Treasure by Snabisch](http://youtu.be/8ojj8mBQVew)
+* [Winds of Stories](https://opengameart.org/content/winds-of-stories)
 
 
 Sound Effects
@@ -172,8 +172,8 @@ Sound Effects
 
 
 Backgrounds
-* [Vortex]: https://opengameart.org/content/vortex-background
-* [Full Moon]: https://opengameart.org/content/background-night
+* [Vortex](https://opengameart.org/content/vortex-background)
+* [Full Moon](https://opengameart.org/content/background-night)
 * https://favpng.com/
 * http://clipart-library.com/
 * https://pngtree.com/
