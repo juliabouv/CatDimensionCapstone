@@ -87,7 +87,7 @@ A 2D Platformer Game built in Unity and C# that follows a cat's adventure throug
 ### Bounce Tile
 #### Increase jump height when on tile
 
-<img src="/images/bounce.png" alt="bounce tile image" width="50"/>
+<img src="/images/bounce.png" alt="bounce tile image" width="200"/>
 
 ### Enemies
 #### Damage player for 1 hitpoint on contact, can destroy enemy by jumping on from above or with powerup, worth 100 points when killed
