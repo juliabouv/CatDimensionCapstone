@@ -21,7 +21,7 @@ A 2D Platformer Game built in Unity and C# that follows a cat's adventure throug
 #### Space Bar
 #### Jump
 
-<img src="/images/space.png" alt="space bar image" width="100"/>
+<img src="/images/space.png" alt="space bar image" width="150"/>
 
 
 #### Shift
@@ -38,15 +38,15 @@ A 2D Platformer Game built in Unity and C# that follows a cat's adventure throug
 
 ## Game Screen
 
-<img src="/images/game_screen.png" alt="game screen image" width="300"/>
+<img src="/images/game_screen.png" alt="game screen image" width="500"/>
 
-1. Player's Remaining Lives
-2. Player's Score
-3. Player's Remaining Hit Points
-4. Resume Game
-5. Main Menu
-6. Restart Level
-7. Quit Game
+<strong>1.</strong> Player's Remaining Lives
+<strong>2.</strong> Player's Score
+<strong>3.</strong> Player's Remaining Hit Points
+<strong>4.</strong> Resume Game
+<strong>5.</strong> Main Menu
+<strong>6.</strong> Restart Level
+<strong>7.</strong> Quit Game
 
 
 ## Game Items
@@ -54,58 +54,58 @@ A 2D Platformer Game built in Unity and C# that follows a cat's adventure throug
 ### Coin
 #### Worth 100 points for pickup
 
-<img src="/images/coin.png" alt="coin image" width="100"/>
+<img src="/images/coin.png" alt="coin image" width="50"/>
 
 ### Gems
 #### Worth 500 points for pickup
 
-<img src="/images/red_gem.png" alt="red gem image" width="100"/>
-<img src="/images/blue_gem.png" alt="blue gem image" width="100"/>
+<img src="/images/red_gem.png" alt="red gem image" width="50"/>
+<img src="/images/blue_gem.png" alt="blue gem image" width="50"/>
 
 ### Treat
 #### Increase Hit Points
 
-<img src="/images/treat.png" alt="treat image" width="100"/>
+<img src="/images/treat.png" alt="treat image" width="50"/>
 
 ### Exit Portal
 #### Exit through dimensional portal to next level
 
-<img src="/images/exit_portal.png" alt="exit portal image" width="100"/>
+<img src="/images/exit_portal.png" alt="exit portal image" width="50"/>
 
 ### Invincibility Powerup
 #### Does not take damage and can destroy enemies on contact for 11 seconds
 
-<img src="/images/invincibility.png" alt="Invincibility image" width="100"/>
+<img src="/images/invincibility.png" alt="Invincibility image" width="50"/>
 
 ### Fire Powerup
 #### Can shoot fireballs that destroy enemies on contact for 11 seconds
 
-<img src="/images/fire_power.png" alt="Fire image" width="100"/>
+<img src="/images/fire_power.png" alt="Fire image" width="50"/>
 
 ### Bounce Tile
 #### Increase jump height when on tile
 
-<img src="/images/bounce.png" alt="bounce tile image" width="100"/>
+<img src="/images/bounce.png" alt="bounce tile image" width="50"/>
 
 ### Enemies
 #### Damage player for 1 hitpoint on contact, can destroy enemy by jumping on from above or with powerup, worth 100 points when killed
 
-<img src="/images/enemy1.png" alt="enemy image" width="100"/>
-<img src="/images/enemy2.png" alt="enemy image" width="100"/>
-<img src="/images/enemy3.png" alt="enemy image" width="100"/>
+<img src="/images/enemy1.png" alt="enemy image" width="50"/>
+<img src="/images/enemy2.png" alt="enemy image" width="50"/>
+<img src="/images/enemy3.png" alt="enemy image" width="50"/>
 
 ### Hazards
 #### Damage player for 1 hitpoint on contact
 
-<img src="/images/hazard1.png" alt="hazard image" width="100"/>
-<img src="/images/hazard2.png" alt="hazard image" width="100"/>
-<img src="/images/hazard3.png" alt="hazard image" width="100"/>
+<img src="/images/hazard1.png" alt="hazard image" width="50"/>
+<img src="/images/hazard2.png" alt="hazard image" width="50"/>
+<img src="/images/hazard3.png" alt="hazard image" width="50"/>
 
 ### Water and Lava
 #### Kill player on contact
 
-<img src="/images/water.png" alt="water image" width="100"/>
-<img src="/images/lava.png" alt="lava image" width="100"/>
+<img src="/images/water.png" alt="water image" width="50"/>
+<img src="/images/lava.png" alt="lava image" width="50"/>
 
 
 ## Getting Started
