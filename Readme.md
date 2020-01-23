@@ -40,15 +40,15 @@ A 2D Platformer Game built in Unity and C# that follows a cat's adventure throug
 
 ## Game Screen
 
-<img src="/images/game_screen.png" alt="game screen image" width="500"/>
+<img src="/images/game_screen.png" alt="game screen image" width="700"/>
 
-<strong>1.</strong> Player's Remaining Lives
-<strong>2.</strong> Player's Score
-<strong>3.</strong> Player's Remaining Hit Points
-<strong>4.</strong> Resume Game
-<strong>5.</strong> Main Menu
-<strong>6.</strong> Restart Level
-<strong>7.</strong> Quit Game
+1. Player's Remaining Lives
+2. Player's Score
+3. Player's Remaining Hit Points
+4. Resume Game
+5. Main Menu
+6. Restart Level
+7. Quit Game
 
 
 ## Game Items
