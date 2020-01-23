@@ -38,6 +38,9 @@ A 2D Platformer Game built in Unity and C# that follows a cat's adventure throug
 <img src="/images/esc.png" alt="escape image" width="100"/>
 
 
+#### Taking Damage
+Taking damage provides the player with 2 seconds of invincibility in which they cannot take additional damage.
+
 ## Game Screen
 
 <img src="/images/game_screen.png" alt="game screen image" width="700"/>
