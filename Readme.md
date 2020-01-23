@@ -4,6 +4,8 @@
 
 A 2D Platformer Game built in Unity and C# that follows a cat's adventure through the Cat Dimension.
 
+13 levels that traverse different themes and various game mechanics include jumping and platform scaling, boss battles, and chase scenes.
+
 ## Controls
 
 #### Left Arrow
