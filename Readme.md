@@ -1,30 +1,47 @@
 # Escaping the Cat Dimension
 
-![hero icon](/images/Hero_Idle_Sprite.png =75x)
+<img src="/images/Hero_Idle_Sprite.png" alt="hero icon" width="150"/>
 
 A 2D Platformer Game built in Unity and C# that follows a cat's adventure through the Cat Dimension.
 
 ## Controls
 
+
+
 #### Left Arrow
-![left arrow image](/images/left_arrow.png =100x)
+
+<img src="/images/left_arrow.png" alt="left arrow image" width="200"/>
+
 ### Move Left
 
+
 #### Right Arrow
-![right arrow image](/images/right_arrow.png =100x)
+
+<img src="/images/right_arrow.png" alt="right arrow image" width="200"/>
+
 ### Move Right
 
+
 #### Space Bar
-![space bar image](/images/space.png =100x)
+
+<img src="/images/space.png" alt="space bar image" width="200"/>
+
 #### Jump
 
+
 #### Shift
-![right arrow image](/images/shift.png =100x)
+
+<img src="/images/shift.png" alt="shift image" width="200"/>
+
 #### Shoot Fire
 
+
 #### Escape
-![right arrow image](/images/esc.png =100x)
+
+<img src="/images/esc.png" alt="escape image" width="200"/>
+
 #### Pause Game
+
 
 
 ## Getting Started
