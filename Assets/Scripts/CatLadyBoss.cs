@@ -108,7 +108,7 @@ public class CatLadyBoss : MonoBehaviour
     {
         GameObject audioListener = GameObject.FindWithTag("AudioListener");
         AudioSource.PlayClipAtPoint(deathSFX, audioListener.transform.position, soundVol);
-        FindObjectOfType<GameSession>().AddToScore(400);
+        FindObjectOfType<GameSession>().AddToScore(500);
         StartCoroutine(SlowLoad());
     }
 

@@ -1230,7 +1230,6 @@ GameObject:
   - component: {fileID: 8792130569987494457}
   - component: {fileID: 5022890045306883395}
   - component: {fileID: 2691767017482332575}
-  - component: {fileID: 8730683976211987208}
   m_Layer: 5
   m_Name: Restart Level
   m_TagString: Untagged
@@ -1337,7 +1336,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8730683976211987208}
+      - m_Target: {fileID: 5915787366647325571}
         m_MethodName: RestartLevel
         m_Mode: 1
         m_Arguments:
@@ -1348,17 +1347,3 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &8730683976211987208
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7674585543405086621}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4e5c7d3c54714879a00144d40be1b56, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameIsPaused: 0
-  pauseMenuUI: {fileID: 5915787366647325572}

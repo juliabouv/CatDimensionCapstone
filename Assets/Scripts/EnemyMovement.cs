@@ -33,7 +33,7 @@ public class EnemyMovement : MonoBehaviour {
         GameObject audioListener = GameObject.FindWithTag("AudioListener");
         AudioSource.PlayClipAtPoint(enemyDeathSFX, audioListener.transform.position, soundVol);
         Destroy(enemy);
-        FindObjectOfType<GameSession>().AddToScore(50);
+        FindObjectOfType<GameSession>().AddToScore(100);
     }
 
     bool IsFacingRight()

@@ -107,7 +107,7 @@ public class Player : MonoBehaviour {
     {
         if(firePowerup)
         {
-            if(CrossPlatformInputManager.GetButtonDown("Fire1"))
+            if(CrossPlatformInputManager.GetButtonDown("Fire1") || CrossPlatformInputManager.GetButtonDown("Fire2"))
             {
                 if (canShoot)
                 {

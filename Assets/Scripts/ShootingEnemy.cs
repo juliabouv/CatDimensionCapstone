@@ -8,6 +8,7 @@ public class ShootingEnemy : MonoBehaviour
     public float startTimeBetweenShots = 3f;
     public GameObject projectile;
     Animator myAnimator;
+    Rigidbody2D myRigidBody;
     public AudioClip enemyDeathSFX;
     public float soundVol = 0.25f;
 
@@ -16,6 +17,8 @@ public class ShootingEnemy : MonoBehaviour
     void Start()
     {
         myAnimator = GetComponent<Animator>();
+        myRigidBody = GetComponent<Rigidbody2D>();
+
         timeBetweenShots = startTimeBetweenShots;
     }
 
@@ -33,7 +36,16 @@ public class ShootingEnemy : MonoBehaviour
             myAnimator.SetBool("Throw", false);
             timeBetweenShots -= Time.deltaTime;
         }
-        
+
+        if (IsFacingRight() && player.position.x < transform.position.x)
+        {
+            flipSprite();
+        }
+        else if ((!IsFacingRight()) && player.position.x > transform.position.x)
+        {
+            flipSprite();
+        }
+
     }
 
     public void killEnemy(GameObject enemy)
@@ -41,5 +53,15 @@ public class ShootingEnemy : MonoBehaviour
         GameObject audioListener = GameObject.FindWithTag("AudioListener");
         AudioSource.PlayClipAtPoint(enemyDeathSFX, audioListener.transform.position, soundVol);
         Destroy(enemy);
+    }
+
+    void flipSprite()
+    {
+        transform.localScale = new Vector2(-(Mathf.Sign(myRigidBody.velocity.x)), 1f);
+    }
+
+    bool IsFacingRight()
+    {
+        return transform.localScale.x < 0;
     }
 }

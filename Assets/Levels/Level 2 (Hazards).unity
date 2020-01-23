@@ -1422,46 +1422,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5915787366068635303, guid: 4b2b2ae2ea199447296f8037fbb6ca52,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5915787366068635303, guid: 4b2b2ae2ea199447296f8037fbb6ca52,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5915787366068635303, guid: 4b2b2ae2ea199447296f8037fbb6ca52,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5915787366068635303, guid: 4b2b2ae2ea199447296f8037fbb6ca52,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5915787366581486331, guid: 4b2b2ae2ea199447296f8037fbb6ca52,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5915787366581486331, guid: 4b2b2ae2ea199447296f8037fbb6ca52,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5915787366581486331, guid: 4b2b2ae2ea199447296f8037fbb6ca52,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5915787366581486331, guid: 4b2b2ae2ea199447296f8037fbb6ca52,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5915787366647325568, guid: 4b2b2ae2ea199447296f8037fbb6ca52,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1571,26 +1531,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pause Menu Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 5915787367269965975, guid: 4b2b2ae2ea199447296f8037fbb6ca52,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5915787367269965975, guid: 4b2b2ae2ea199447296f8037fbb6ca52,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5915787367269965975, guid: 4b2b2ae2ea199447296f8037fbb6ca52,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5915787367269965975, guid: 4b2b2ae2ea199447296f8037fbb6ca52,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b2b2ae2ea199447296f8037fbb6ca52, type: 3}

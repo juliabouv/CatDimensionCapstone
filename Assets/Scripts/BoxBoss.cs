@@ -53,7 +53,7 @@ public class BoxBoss : MonoBehaviour
     {
         GameObject audioListener = GameObject.FindWithTag("AudioListener");
         AudioSource.PlayClipAtPoint(deathSFX, audioListener.transform.position, soundVol);
-        FindObjectOfType<GameSession>().AddToScore(200);
+        FindObjectOfType<GameSession>().AddToScore(300);
         StartCoroutine(SlowLoad());
     }
 
